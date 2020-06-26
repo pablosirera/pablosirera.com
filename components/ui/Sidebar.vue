@@ -1,7 +1,7 @@
 <template>
   <aside class="flex flex-col items-center">
     <Logo />
-    <h1 class="title">
+    <h1 class="title text-center">
       Pablo Sirera
     </h1>
     <ul class="text-center">

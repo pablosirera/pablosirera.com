@@ -21,7 +21,10 @@ export default {
 .main-container {
   display: grid;
   grid-template-columns: 1fr 3fr;
+  column-gap: 2rem;
 }
+
+/* TODO: remove this button styles */
 
 .button--green {
   display: inline-block;
