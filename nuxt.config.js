@@ -48,6 +48,7 @@ export default {
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt/content
     '@nuxt/content',
+    'nuxt-i18n',
     [
       'nuxt-fontawesome',
       {
@@ -66,6 +67,30 @@ export default {
    ** See https://content.nuxtjs.org/configuration
    */
   content: {},
+  /*
+   ** nuxt-i18n config
+   */
+  i18n: {
+    locales: [
+      {
+        code: 'en',
+        iso: 'en-US',
+        file: 'en.json',
+      },
+      {
+        code: 'es',
+        iso: 'es-ES',
+        file: 'es.json',
+      },
+    ],
+    seo: true,
+    lazy: true,
+    defaultLocale: 'es',
+    langDir: 'locales/',
+    vueI18n: {
+      fallbackLocale: 'es',
+    },
+  },
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
