@@ -38,42 +38,26 @@ export default {
   computed: {
     monthNames() {
       return [
-        'enero',
-        'febrero',
-        'marzo',
-        'abril',
-        'mayo',
-        'junio',
-        'julio',
-        'agosto',
-        'septiembre',
-        'octubre',
-        'noviembre',
-        'diciembre',
+        this.$t('months.january'),
+        this.$t('months.february'),
+        this.$t('months.march'),
+        this.$t('months.april'),
+        this.$t('months.may'),
+        this.$t('months.june'),
+        this.$t('months.july'),
+        this.$t('months.august'),
+        this.$t('months.september'),
+        this.$t('months.october'),
+        this.$t('months.november'),
+        this.$t('months.december'),
       ]
-      // TODO: integrate translations
-      // return [
-      //   this.$t('months.january'),
-      //   this.$t('months.february'),
-      //   this.$t('months.march'),
-      //   this.$t('months.april'),
-      //   this.$t('months.may'),
-      //   this.$t('months.june'),
-      //   this.$t('months.july'),
-      //   this.$t('months.august'),
-      //   this.$t('months.september'),
-      //   this.$t('months.october'),
-      //   this.$t('months.november'),
-      //   this.$t('months.december'),
-      // ]
     },
   },
   methods: {
     getTimeToReadText(timeToRead) {
-      // TODO: integrate translations
-      // const keyTranslateText = timeToRead > 1 ? 'minutes' : 'minute'
-      // const translateText = this.$i18n.t(`posts.${keyTranslateText}`)
-      return `${timeToRead} minutos`
+      const keyTranslateText = timeToRead > 1 ? 2 : 1
+      const translateText = this.$i18n.tc('posts.minute', keyTranslateText)
+      return `${timeToRead} ${translateText}`
     },
     getDate(date) {
       const newDate = new Date(date)

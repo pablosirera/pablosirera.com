@@ -1,6 +1,5 @@
 <template>
   <div>
-    // TODO: translate this title
     <h1 class="title">Blog</h1>
     <div class="flex flex-col m-auto pt-8">
       <BlogCard
