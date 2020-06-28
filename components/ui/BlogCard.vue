@@ -4,7 +4,7 @@
       {{ title }}
     </h1>
     <div class="bottom-post">
-      <span class="date">{{ getDate(date) }}</span>
+      <span class="date">🗓 {{ getDate(date) }}</span>
       <span class="clock-icon flex items-center">
         <fa icon="clock" class="icon mr-1" />
         {{ getTimeToReadText(timeToRead) }}
@@ -79,7 +79,7 @@ $mobile: var(--mobile);
   transition: box-shadow 0.5s ease, transform 0.5s ease;
   padding: 10px;
 
-  @apply flex flex-col cursor-pointer mb-4;
+  @apply flex flex-col cursor-pointer mb-4 border border-gray-main-300 rounded-md;
 }
 
 .post:hover {

@@ -1,8 +1,8 @@
 ---
-title: 'Bus de Eventos global con Vue'
-description: 'Ejemplo de bus de eventos en Vue'
-date: 2019-05-01
-timeToRead: 3
+title: 'Desplegar una aplicación hecha con Vue en GithubPages'
+description: 'Tutorial sobre cómo desplegar una aplicación Vue en github pages'
+date: 2018-11-01
+timeToRead: 2
 ---
 
 # Hello test 2

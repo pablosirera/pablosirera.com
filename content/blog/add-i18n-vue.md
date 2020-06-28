@@ -1,8 +1,8 @@
 ---
-title: 'Bus de Eventos global con Vue'
-description: 'Ejemplo de bus de eventos en Vue'
-date: 2019-05-01
-timeToRead: 3
+title: 'Añadir i18n en una aplicación Vue'
+description: 'Cómo traducir tus aplicaciones con Vue e I18n'
+date: 2019-02-01
+timeToRead: 5
 ---
 
 # Hello test 2

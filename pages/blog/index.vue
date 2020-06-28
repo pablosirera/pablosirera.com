@@ -6,7 +6,7 @@
         v-for="(post, index) in posts"
         :key="index"
         v-bind="post"
-        @select="goToPost(post.name)"
+        @select="goToPost(post.path)"
       />
     </div>
   </div>
@@ -22,12 +22,12 @@ export default {
     BlogCard,
   },
   async asyncData({ $content }) {
-    const posts = await $content('blog').fetch()
+    const posts = await $content('blog').sortBy('date', 'desc').fetch()
     return { posts }
   },
   methods: {
-    goToPost(name) {
-      this.$router.push({ path: `/blog/${name}` })
+    goToPost(path) {
+      this.$router.push({ path })
     },
   },
 }

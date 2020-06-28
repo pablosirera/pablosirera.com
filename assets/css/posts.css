@@ -1,0 +1,38 @@
+article > .nuxt-content h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+article > .nuxt-content .vue {
+  background-color: theme('colors.green-main.400');
+  color: white;
+  padding: 0 3px;
+}
+
+article > .nuxt-content .code {
+  background-color: theme('colors.blue-main.750');
+  color: theme('colors.gray-main.950');
+  padding: 0 3px;
+}
+
+article > .nuxt-content a {
+  /* TODO: integrate tailwind */
+  text-decoration: none;
+  color: #1f8ed5;
+  font-weight: bold;
+  opacity: 1;
+  border-bottom: solid 1px transparent;
+  -webkit-transition: opacity 0.2s ease-out, border-bottom-color 0.4s ease-out;
+  -moz-transition: opacity 0.2s ease-out, border-bottom-color 0.4s ease-out;
+  -ms-transition: opacity 0.2s ease-out, border-bottom-color 0.4s ease-out;
+  -o-transition: opacity 0.2s ease-out, border-bottom-color 0.4s ease-out;
+  transition: opacity 0.2s ease-out, border-bottom-color 0.4s ease-out;
+}
+
+article > .nuxt-content a:hover {
+  /* TODO: integrate tailwind */
+  opacity: 0.8;
+  border-bottom: solid 1px #1f8ed5;
+}

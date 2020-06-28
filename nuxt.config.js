@@ -19,17 +19,24 @@ export default {
         content: process.env.npm_package_description || '',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Cookie',
+      },
+    ],
   },
   /*
    ** Global CSS
    */
   css: ['~/assets/css/main.css'],
+  components: true,
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [],
+  plugins: ['~/plugins/global.js'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -89,6 +96,22 @@ export default {
     langDir: 'locales/',
     vueI18n: {
       fallbackLocale: 'es',
+      dateTimeFormats: {
+        es: {
+          short: {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+          },
+        },
+        en: {
+          short: {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+          },
+        },
+      },
     },
   },
   /*

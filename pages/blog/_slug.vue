@@ -1,5 +1,15 @@
 <template>
-  <nuxt-content :document="doc" />
+  <article class="mb-20">
+    <h1 class="text-4xl">{{ doc.title }}</h1>
+    <h2>
+      <span>🗓 {{ $d(new Date(doc.date), 'short') }}</span>
+      -
+      <span>⏱ {{ doc.timeToRead }} {{ $tc('posts.minute', 2) }}</span>
+    </h2>
+    <div class="divider" />
+    <nuxt-content :document="doc" />
+    <CoffeeWidget />
+  </article>
 </template>
 
 <script>
@@ -10,3 +20,9 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.divider {
+  @apply border-4 border-blue-main-400 opacity-75 w-16 rounded mt-4 mb-8;
+}
+</style>
