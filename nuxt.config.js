@@ -73,7 +73,13 @@ export default {
    ** Content module configuration
    ** See https://content.nuxtjs.org/configuration
    */
-  content: {},
+  content: {
+    markdown: {
+      prism: {
+        theme: '~/assets/prism-themes/prism-material-oceanic.css',
+      },
+    },
+  },
   /*
    ** nuxt-i18n config
    */
