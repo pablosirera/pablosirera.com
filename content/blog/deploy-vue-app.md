@@ -5,6 +5,43 @@ date: 2018-11-01
 timeToRead: 2
 ---
 
-# Hello test 2
+¿Quieres desplegar tu aplicación con Vue en internet y no sabes cómo? Sigue entonces los siguientes pasos para desplegar tu app en GitHub Pages:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra tincidunt ligula in congue. Cras nec sapien a risus varius dictum. Sed rhoncus convallis sapien quis varius. In justo leo, congue et convallis sed, feugiat et orci. Quisque quam elit, venenatis non diam eget, hendrerit posuere ex. Nam condimentum elit aliquam nisl varius, quis luctus massa ullamcorper. Curabitur ac pellentesque arcu. Nulla turpis libero, condimentum vel tempor non, sagittis vitae sem. Etiam aliquet eu nisl vel dictum. Phasellus vitae ornare purus, ut euismod quam. In eget tristique lacus. Duis lectus sem, pretium sit amet mollis vitae, sagittis eu augue.
+Primero de todo, cámbiate a otra rama diferente de master, esta la usaremos para trabajar sobre ella en vez de sobre la rama principal.
+
+```bash
+git checkout -b github-pages
+```
+
+El motivo de esto, es que al hacer a continuación el deploy de la aplicación, la carpeta <span class='code'>/dist</span> se subirá a master y no estará el contenido de la aplicación, sino el de la carpeta <span class='code'>/dist</span>.
+
+En el siguiente paso, habrá que crear el archivo `github-pages.sh` en la raíz del proyecto con el siguiente contenido:
+
+```shell
+#!/usr/bin/env sh
+
+# abort on errors
+set -e
+
+# build
+npm run build
+
+# copy README.md
+cp README.md dist/
+
+# navigate into the build output directory
+cd dist
+
+git init
+git add -A
+git commit -m 'deploy'
+
+# if you are deploying to https://USERNAME.github.io
+git push -f git@github.com:USERNAME/USERNAME.github.io.git master
+
+cd -
+```
+
+La tarea de build es la establecida por defecto en <span class='vue'>Vue</span> <span class='code'>"build": "vue-cli-service build"</span>.
+
+Para finalizar, en la consola hay que lanzar el comando <span class='code'>sh github-pages.sh</span> para ejecutar el script que se ha creado anteriormente. Una vez que termine, ya estará disponible en la url de Github Pages la aplicación desplegada.
