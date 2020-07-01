@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import BlogCard from '@/components/ui/BlogCard'
+import BlogCard from '@/components/blog/BlogCard'
 
 export default {
   scrollToTip: true,
@@ -22,7 +22,10 @@ export default {
     BlogCard,
   },
   async asyncData({ $content }) {
-    const posts = await $content('blog').sortBy('date', 'desc').fetch()
+    const posts = await $content('blog')
+      .without(['body', 'toc'])
+      .sortBy('date', 'desc')
+      .fetch()
     return { posts }
   },
   methods: {
