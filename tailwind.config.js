@@ -6,7 +6,9 @@ module.exports = {
           500: '#f1e05a',
         },
         'green-main': {
+          100: '#ebffeb',
           400: '#4fc08d',
+          600: '#9bd681',
         },
         'gray-main': {
           200: '#eaecef',
@@ -17,6 +19,7 @@ module.exports = {
         },
         'blue-main': {
           400: '#1f8ed5',
+          500: '#526488',
           600: '#0366d6',
           700: '#35495e',
           750: '#1f8ed540',

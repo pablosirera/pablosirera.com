@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="title">Blog</h1>
+    <h1 class="title text-center">Blog</h1>
     <div class="flex flex-col m-auto pt-8">
       <BlogCard
         v-for="(post, index) in posts"

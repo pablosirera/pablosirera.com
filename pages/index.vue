@@ -27,21 +27,7 @@ export default {
 }
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
+<style scoped>
 .links {
   padding-top: 15px;
 }

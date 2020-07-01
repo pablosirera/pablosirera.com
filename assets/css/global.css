@@ -28,3 +28,7 @@ html {
   color: #35495e;
   letter-spacing: 1px;
 }
+
+.container {
+  margin: 0 auto;
+}

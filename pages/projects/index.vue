@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h1 class="title">{{ $t('projects.title') }}</h1>
+    <h1 class="title text-center">{{ $t('projects.title') }}</h1>
     <section class="grid col-gap-5 grid-cols-1 pt-8 md:grid-cols-2">
       <ProjectCard
         v-for="(project, index) in projects"

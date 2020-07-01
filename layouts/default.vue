@@ -1,29 +1,23 @@
 <template>
-  <div class="main-container container min-h-screen">
-    <Sidebar class="sidebar" />
-    <main>
+  <div class="min-h-screen">
+    <TheHeader />
+    <main class="pt-4 container">
       <nuxt />
     </main>
   </div>
 </template>
 
 <script>
-import Sidebar from '~/components/ui/Sidebar.vue'
+import TheHeader from '~/components/ui/TheHeader.vue'
 
 export default {
   components: {
-    Sidebar,
+    TheHeader,
   },
 }
 </script>
 
 <style>
-.main-container {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  column-gap: 2rem;
-}
-
 /* TODO: remove this button styles */
 
 .button--green {
