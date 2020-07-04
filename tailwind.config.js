@@ -2,6 +2,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        primary: '#9bd681',
         'yellow-main': {
           500: '#f1e05a',
         },
@@ -25,6 +26,9 @@ module.exports = {
           750: '#1f8ed540',
           800: '#2c3e50',
         },
+      },
+      borderWidth: {
+        6: '6px',
       },
     },
   },

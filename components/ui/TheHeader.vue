@@ -1,5 +1,5 @@
 <template>
-  <header class="py-5 bg-green-main-100">
+  <header class="py-5">
     <div class="container flex justify-between items-center">
       <div class="flex items-center">
         <nuxt-link to="/">
@@ -60,6 +60,6 @@ export default {
 }
 
 .link.nuxt-link-active {
-  @apply text-gray-main-600 underline;
+  @apply text-gray-main-600 border-b-4 border-primary pb-2;
 }
 </style>
