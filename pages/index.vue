@@ -21,15 +21,18 @@
       </p>
       <!-- TODO: add social links -->
       <div class="mt-4">
-        aquí van las redes sociales
+        <SocialIcons />
       </div>
     </div>
     <!-- TODO: translate this text -->
-    <img
-      class="image"
-      src="/images/desarrollador-web-setup.jpg"
-      alt="desarrollador web valencia"
-    />
+    <div class="image-wrapper relative">
+      <img
+        class="image"
+        src="/images/desarrollador-web-setup.jpg"
+        alt="desarrollador web valencia"
+      />
+      <div class="bg-image absolute" />
+    </div>
   </section>
 </template>
 
@@ -39,10 +42,26 @@ export default {
 }
 </script>
 
-<style scoped>
-.image {
-  width: 385px;
-  height: auto;
+<style scoped lang="scss">
+$widthImage: 385px;
+$heigthImage: 510px;
+
+.image-wrapper {
   justify-self: center;
+
+  .bg-image {
+    width: $widthImage;
+    height: $heigthImage;
+    top: -20px;
+    right: -20px;
+    z-index: -1;
+
+    @apply bg-primary;
+  }
+
+  .image {
+    width: $widthImage;
+    height: $heigthImage;
+  }
 }
 </style>
