@@ -30,3 +30,8 @@ article > .nuxt-content {
     rgba(0, 0, 0, 0.15) 0 16px 16px 0, rgba(0, 0, 0, 0.15) 0 8px 8px 0,
     rgba(0, 0, 0, 0.15) 0 4px 4px 0;
 }
+
+.nuxt-content .yt-video {
+  margin: 20px auto;
+  width: 450px;
+}

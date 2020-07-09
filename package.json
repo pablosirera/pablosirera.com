@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^5.13.1",
+    "@miyaoka/vue-youtube-embed-lite": "^1.1.0",
     "@nuxt/components": "^1.0.6",
     "@nuxt/content": "^1.4.1",
     "@nuxtjs/pwa": "^3.0.0-beta.20",
