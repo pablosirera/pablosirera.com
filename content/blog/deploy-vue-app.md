@@ -13,9 +13,9 @@ Primero de todo, cámbiate a otra rama diferente de master, esta la usaremos par
 git checkout -b github-pages
 ```
 
-El motivo de esto, es que al hacer a continuación el deploy de la aplicación, la carpeta <span class='code'>/dist</span> se subirá a master y no estará el contenido de la aplicación, sino el de la carpeta <span class='code'>/dist</span>.
+El motivo de esto, es que al hacer a continuación el deploy de la aplicación, la carpeta <span class="code">/dist</span> se subirá a master y no estará el contenido de la aplicación, sino el de la carpeta <span class="code">/dist</span>.
 
-En el siguiente paso, habrá que crear el archivo `github-pages.sh` en la raíz del proyecto con el siguiente contenido:
+En el siguiente paso, habrá que crear el archivo <span class="code">github-pages.sh</span> en la raíz del proyecto con el siguiente contenido:
 
 ```shell
 #!/usr/bin/env sh

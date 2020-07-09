@@ -70,15 +70,15 @@ export default {
 }
 ```
 
-En el componente donde recibimos el evento cargamos, en el lifecycle <span class='code'>mounted</span>, los eventos que queremos escuchar, para que así, cuando lancemos el <span class='code'>\$emit</span> se llame a nuestro callback que pasamos por parámetro.
+En el componente donde recibimos el evento cargamos, en el lifecycle <span class='code'>mounted</span>, los eventos que queremos escuchar, para que así, cuando lancemos el <span class='code'>$emit</span> se llame a nuestro callback que pasamos por parámetro.
 
-Si solo quisieramos escuchar el evento una sola vez, usaríamos <span class='code'>EventBus.\$once(nameEvent, callback)</span>
+Si solo quisieramos escuchar el evento una sola vez, usaríamos <span class='code'>EventBus.$once(nameEvent, callback)</span>
 
 ## Eliminar el evento
 
-Por último, cabe decir que una vez que queramos terminar de escuchar el evento deberíamos eliminar dicho registro. Para ello usáremos el método <span class='code'>EventBus.\$off</span>, al cual podemos pasarle el nombre del evento que queremos eliminar y un callback o simplemente pasándole el nombre del evento.
+Por último, cabe decir que una vez que queramos terminar de escuchar el evento deberíamos eliminar dicho registro. Para ello usáremos el método <span class='code'>EventBus.$off</span>, al cual podemos pasarle el nombre del evento que queremos eliminar y un callback o simplemente pasándole el nombre del evento.
 
-Si quisiéramos eliminar todos los eventos, simplemente habría que usar <span class='code'>EventBus.\$off()</span>.
+Si quisiéramos eliminar todos los eventos, simplemente habría que usar <span class='code'>EventBus.$off()</span>.
 
 ```js
 import { EventBus } from '@/utils/event-bus.js'

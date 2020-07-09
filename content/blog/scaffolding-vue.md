@@ -51,6 +51,6 @@ La idea de shared es mantener lo nativo de <span class='vue'>Vue</span> en la ca
 
 Por último, me gustaría remarcar que aunque para mi este scaffolding es el más útil para trabajar no tiene que ser así para todo el mundo. Así que os animo a todos a probar día a día cual es el que más se adapta a vuestra forma de trabajo.
 
-Espero que pueda serviros de ayuda y cualquier feedback por <a target='_blank' href='https://twitter.com/pablosirera'>twitter</a> será bienvenido ✌️.
+Espero que pueda serviros de ayuda y cualquier feedback por <the-link url='https://twitter.com/pablosirera'>twitter</the-link> será bienvenido ✌️.
 
-Os dejo también el link al repo de <a target='_blank' href='https://github.com/pablosirera/scaffolding-vue'>github</a>, por si os queréis descargar este ejemplo.
+Os dejo también el link al repo de <the-link url='https://github.com/pablosirera/scaffolding-vue'>github</the-link>, por si os queréis descargar este ejemplo.

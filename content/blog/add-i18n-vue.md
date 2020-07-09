@@ -5,7 +5,7 @@ date: 2019-02-01
 timeToRead: 5
 ---
 
-¿Hoy en día quién no necesita acceder a una web y poder visitarla en su propio idioma? La respuesta es obvia y con el plugin <a target='_blank' href='https://kazupon.github.io/vue-i18n/'>vue-i18n</a> podemos configurar nuestra aplicación para que sea multilenguaje.
+¿Hoy en día quién no necesita acceder a una web y poder visitarla en su propio idioma? La respuesta es obvia y con el plugin <the-link url='https://kazupon.github.io/vue-i18n/'>vue-i18n</the-link> podemos configurar nuestra aplicación para que sea multilenguaje.
 
 Para poder seguir estas instrucciones es necesario tener ya generado un proyecto con Vue.
 
@@ -101,7 +101,7 @@ Ahora vamos a usar esas traducciones, para eso, nos vamos a cualquier componente
 <h1>{{ $t('hello') }}</h1>
 ```
 
-Para usar el plugin de internalización simplemente usaremos <span class='code'>\$t</span> y entre paréntesis añadiremos como un string la key deseada.
+Para usar el plugin de internalización simplemente usaremos <span class='code'>$t</span> y entre paréntesis añadiremos como un string la key deseada.
 
 En el caso de tener más elementos dentro del objeto anterior, podremos modificarlo así:
 
@@ -238,6 +238,6 @@ Este cambio se debe a que en el data no tienes acceso a la propiedad <span class
 
 Finalmente, si volvemos a lanzar el comando <span class='code'>npm run serve</span> podremos comprobar los cambios que hemos realizado anteriormente.
 
-He creado un repositorio con todos estos cambios realizados <a target='_blank' href='https://github.com/pablosirera/seed-vue-i18n'>Seed Vue i18n</a>
+He creado un repositorio con todos estos cambios realizados <the-link url='https://github.com/pablosirera/seed-vue-i18n'>Seed Vue i18n</the-link>
 
 <b>P.D.:</b> Quizás has pensado...¿y si tengo muchos textos para traducir? El archivo <span class='code'>i18n.js</span> se puede hacer muy complicado de leer...esto es cierto y para evitarlo se pueden añadir todos los textos en ficheros específicos para cada idioma. De todo esto hablaré con más detenimiento en el próximo post.
