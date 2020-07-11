@@ -3,6 +3,8 @@ title: 'Añadir i18n en una aplicación Vue'
 description: 'Cómo traducir tus aplicaciones con Vue e I18n'
 date: 2019-02-01
 timeToRead: 5
+tags:
+  - vue
 ---
 
 ¿Hoy en día quién no necesita acceder a una web y poder visitarla en su propio idioma? La respuesta es obvia y con el plugin <the-link url='https://kazupon.github.io/vue-i18n/'>vue-i18n</the-link> podemos configurar nuestra aplicación para que sea multilenguaje.
@@ -101,7 +103,7 @@ Ahora vamos a usar esas traducciones, para eso, nos vamos a cualquier componente
 <h1>{{ $t('hello') }}</h1>
 ```
 
-Para usar el plugin de internalización simplemente usaremos <span class='code'>$t</span> y entre paréntesis añadiremos como un string la key deseada.
+Para usar el plugin de internalización simplemente usaremos <span class='code'>\$t</span> y entre paréntesis añadiremos como un string la key deseada.
 
 En el caso de tener más elementos dentro del objeto anterior, podremos modificarlo así:
 

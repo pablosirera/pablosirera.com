@@ -3,6 +3,9 @@ title: 'Crear una aplicación Vue desde cero'
 description: 'Tutorial sobre cómo crear una aplicación vue desde cero'
 date: 2020-05-01
 timeToRead: 5
+tags:
+  - vue
+  - firebase
 ---
 
 Llevo un tiempo haciendo directos en <the-link url="https://twitch.tv/pablosirera">Twitch</the-link> creando una aplicación <b>para la gestión de nuestras plantas</b> desde cero y en este post voy a dejar un listado explicando que se ha hecho en cada vídeo para que sea más fácil seguir el curso.

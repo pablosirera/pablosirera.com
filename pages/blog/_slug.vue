@@ -6,6 +6,9 @@
       -
       <span>⏱ {{ doc.timeToRead }} {{ $tc('posts.minute', 2) }}</span>
     </h2>
+    <div class="tags">
+      <Tag v-for="(tag, index) in doc.tags" :key="index" :tag="tag" />
+    </div>
     <div class="divider" />
     <nuxt-content :document="doc" />
     <CoffeeWidget />

@@ -3,6 +3,8 @@ title: 'Bus de Eventos global con Vue'
 description: 'Ejemplo de bus de eventos en Vue'
 date: 2019-05-01
 timeToRead: 3
+tags:
+  - vue
 ---
 
 Alguna vez me ha hecho falta crear un poco de <b>magia oscura</b> en alguna aplicación. Algunos le llaman también <b>extraña comunicación entre componentes</b>, aunque puede usarse sin necesidad de estar en un componente. Para realizar esto, existe un patrón llamado <span class='code'><b>event bus pattern === publish-subscribe pattern</b></span> que se integra genial con <span class='vue'>Vue</span>. Cabe mencionar que este patrón no está considerado una buena práctica, pero no obstante creo que es recomendable conocerlo por si en algún momento nos hiciese falta.
@@ -70,15 +72,15 @@ export default {
 }
 ```
 
-En el componente donde recibimos el evento cargamos, en el lifecycle <span class='code'>mounted</span>, los eventos que queremos escuchar, para que así, cuando lancemos el <span class='code'>$emit</span> se llame a nuestro callback que pasamos por parámetro.
+En el componente donde recibimos el evento cargamos, en el lifecycle <span class='code'>mounted</span>, los eventos que queremos escuchar, para que así, cuando lancemos el <span class='code'>\$emit</span> se llame a nuestro callback que pasamos por parámetro.
 
-Si solo quisieramos escuchar el evento una sola vez, usaríamos <span class='code'>EventBus.$once(nameEvent, callback)</span>
+Si solo quisieramos escuchar el evento una sola vez, usaríamos <span class='code'>EventBus.\$once(nameEvent, callback)</span>
 
 ## Eliminar el evento
 
-Por último, cabe decir que una vez que queramos terminar de escuchar el evento deberíamos eliminar dicho registro. Para ello usáremos el método <span class='code'>EventBus.$off</span>, al cual podemos pasarle el nombre del evento que queremos eliminar y un callback o simplemente pasándole el nombre del evento.
+Por último, cabe decir que una vez que queramos terminar de escuchar el evento deberíamos eliminar dicho registro. Para ello usáremos el método <span class='code'>EventBus.\$off</span>, al cual podemos pasarle el nombre del evento que queremos eliminar y un callback o simplemente pasándole el nombre del evento.
 
-Si quisiéramos eliminar todos los eventos, simplemente habría que usar <span class='code'>EventBus.$off()</span>.
+Si quisiéramos eliminar todos los eventos, simplemente habría que usar <span class='code'>EventBus.\$off()</span>.
 
 ```js
 import { EventBus } from '@/utils/event-bus.js'

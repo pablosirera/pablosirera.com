@@ -3,6 +3,8 @@ title: 'Desplegar una aplicación hecha con Vue en GithubPages'
 description: 'Tutorial sobre cómo desplegar una aplicación Vue en github pages'
 date: 2018-11-01
 timeToRead: 2
+tags:
+  - vue
 ---
 
 ¿Quieres desplegar tu aplicación con Vue en internet y no sabes cómo? Sigue entonces los siguientes pasos para desplegar tu app en GitHub Pages:

@@ -3,6 +3,8 @@ title: 'Estructura de carpetas en Vue'
 description: 'Ejemplo de estructura de carpetas en Vue'
 date: 2020-02-01
 timeToRead: 4
+tags:
+  - vue
 ---
 
 Hace ya un tiempo que empecé a trabajar con <span class='vue'>Vue</span> y, sinceramente, es uno de los frameworks que más me apasiona. Entre muchas razones, me gusta por su sencillez, por su flexibilidad y por su comunidad.
