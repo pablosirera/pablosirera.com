@@ -6,8 +6,13 @@
       -
       <span>⏱ {{ doc.timeToRead }} {{ $tc('posts.minute', 2) }}</span>
     </h2>
-    <div class="tags">
-      <Tag v-for="(tag, index) in doc.tags" :key="index" :tag="tag" />
+    <div class="mt-4 flex">
+      <Tag
+        v-for="(tag, index) in doc.tags"
+        :key="index"
+        :tag="tag"
+        class="mr-4"
+      />
     </div>
     <div class="divider" />
     <nuxt-content :document="doc" />
@@ -26,6 +31,6 @@ export default {
 
 <style scoped>
 .divider {
-  @apply border-4 border-blue-main-400 opacity-75 w-16 rounded mt-4 mb-8;
+  @apply border-4 border-primary w-16 rounded mt-4 mb-8;
 }
 </style>

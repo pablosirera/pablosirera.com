@@ -6,6 +6,7 @@ timeToRead: 5
 tags:
   - vue
   - firebase
+  - tailwind
 ---
 
 Llevo un tiempo haciendo directos en <the-link url="https://twitch.tv/pablosirera">Twitch</the-link> creando una aplicación <b>para la gestión de nuestras plantas</b> desde cero y en este post voy a dejar un listado explicando que se ha hecho en cada vídeo para que sea más fácil seguir el curso.
