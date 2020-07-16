@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center">
+  <div class="flex items-center justify-center md:justify-start">
     <a
       v-for="(social, index) in socials"
       :key="index"
@@ -8,7 +8,7 @@
       target="_blank"
       :aria-label="social.ariaLabel"
     >
-      <img class="w-8" :src="social.src" :alt="social.alt" />
+      <img class="w-6" :src="social.src" :alt="social.alt" />
     </a>
   </div>
 </template>
@@ -26,22 +26,34 @@ export default {
         ariaLabel: 'Sígueme en twitter',
       },
       {
-        href: 'https://twitch.tv/pablosirera',
-        src: '/images/icons/twitch.svg',
-        alt: '',
-        ariaLabel: 'Sígueme en twitch',
-      },
-      {
         href: 'https://instagram.com/pablodeveloper',
         src: '/images/icons/instagram.svg',
         alt: '',
         ariaLabel: 'Sígueme en instagram',
       },
       {
+        href: 'https://twitch.tv/pablosirera',
+        src: '/images/icons/twitch.svg',
+        alt: '',
+        ariaLabel: 'Sígueme en twitch',
+      },
+      {
         href: 'https://youtube.com/user/psirera4',
         src: '/images/icons/youtube.svg',
         alt: '',
         ariaLabel: 'Subscríbete a mi canal de youtube',
+      },
+      {
+        href: 'https://www.linkedin.com/in/pablosireramata',
+        src: '/images/icons/linkedin.svg',
+        alt: '',
+        ariaLabel: 'Sígueme en linkedin',
+      },
+      {
+        href: 'https://github.com/pablosirera',
+        src: '/images/icons/github.svg',
+        alt: '',
+        ariaLabel: 'Sígueme en github',
       },
     ],
   }),

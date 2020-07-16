@@ -1,9 +1,9 @@
 <template>
-  <section class="grid grid-cols-2 items-center">
+  <section class="pb-10 items-center md:grid md:grid-cols-2">
     <div>
       <!-- TODO: translate and change this text -->
       <h1 class="text-3xl font-semibold">Hola 👋, soy Pablo Sirera</h1>
-      <div class="divider h-2 w-24 bg-primary my-3" />
+      <div class="h-2 w-24 bg-primary my-3 rounded" />
       <p>
         Soy Senior Frontend y actualmente estoy enfocado al mundo del desarrollo
         web con Vue, Nuxt, JavaScript y Jest, entre otros. Además también he
@@ -20,18 +20,17 @@
         redes que dejo 👇👇
       </p>
       <!-- TODO: add social links -->
-      <div class="mt-4">
+      <div class="mt-4 mb-8 md:mb-0">
         <SocialIcons />
       </div>
     </div>
     <!-- TODO: translate this text -->
-    <div class="image-wrapper relative">
+    <div class="image-wrapper">
       <img
         class="image"
         src="/images/desarrollador-web-setup.jpg"
         alt="desarrollador web valencia"
       />
-      <div class="bg-image absolute" />
     </div>
   </section>
 </template>
@@ -43,25 +42,15 @@ export default {
 </script>
 
 <style scoped lang="scss">
-$widthImage: 385px;
-$heigthImage: 510px;
-
 .image-wrapper {
-  justify-self: center;
-
-  .bg-image {
-    width: $widthImage;
-    height: $heigthImage;
-    top: -20px;
-    right: -20px;
-    z-index: -1;
-
-    @apply bg-primary;
-  }
+  @apply rounded flex justify-center;
 
   .image {
-    width: $widthImage;
-    height: $heigthImage;
+    width: 385px;
+    height: 510px;
+    box-shadow: 0.5rem 0.5rem 0 theme('colors.primary');
+
+    @apply rounded;
   }
 }
 </style>

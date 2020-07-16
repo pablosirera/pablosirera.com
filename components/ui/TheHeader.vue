@@ -9,7 +9,7 @@
           Pablo Sirera
         </h1>
       </div>
-      <ul class="text-center flex">
+      <ul class="text-center hidden sm:flex">
         <li
           v-for="(link, index) in links"
           :key="index"
