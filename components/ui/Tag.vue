@@ -1,6 +1,6 @@
 <template>
   <span :class="tagClasses" class="tag" @click="emitEvent">
-    <img class="w-5 mr-1" :src="`/images/icons/${tag}.png`" />
+    <img class="w-5 mr-1" :src="`/images/icons/${tag}.png`" loading="lazy" />
     {{ tag }}
   </span>
 </template>

@@ -8,7 +8,7 @@
       target="_blank"
       :aria-label="social.ariaLabel"
     >
-      <img class="w-6" :src="social.src" :alt="social.alt" />
+      <img class="w-6" :src="social.src" :alt="social.alt" loading="lazy" />
     </a>
   </div>
 </template>

@@ -2,7 +2,11 @@
   <div class="project-card">
     <div>
       <div class="wrapper-title">
-        <img src="@/assets/icons/repo.svg" :alt="$t(project.description)" />
+        <img
+          src="@/assets/icons/repo.svg"
+          :alt="$t(project.description)"
+          loading="lazy"
+        />
         <h1 class="title">
           <a :href="project.url" class="title-link">
             {{ project.name }}
@@ -17,13 +21,18 @@
         <span class="language-text">{{ project.language }}</span>
       </span>
       <a class="link" :href="`${project.url}/stargazers`">
-        <img src="@/assets/icons/star.svg" :alt="$t(project.description)" />
+        <img
+          src="@/assets/icons/star.svg"
+          :alt="$t(project.description)"
+          loading="lazy"
+        />
         {{ project.stars }}
       </a>
       <a class="link" :href="`${project.url}/network/members`">
         <img
           src="@/assets/icons/repo-forked.svg"
           :alt="$t(project.description)"
+          loading="lazy"
         />
         {{ project.forks }}
       </a>

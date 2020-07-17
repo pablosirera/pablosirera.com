@@ -8,6 +8,7 @@
       <img
         src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
         alt="Invítame a un café"
+        loading="lazy"
       />
       <span class="coffee-text">
         <!-- TODO: integrate translations -->

@@ -5,6 +5,7 @@
         class="w-8 cursor-pointer"
         src="/images/icons/menu.svg"
         :alt="$t('general.openMenu')"
+        loading="lazy"
       />
     </span>
     <transition name="slide-fade">
@@ -20,6 +21,7 @@
             class="w-6"
             src="/images/icons/cross.svg"
             :alt="$t('general.closeMenu')"
+            loading="lazy"
           />
         </span>
         <div class="menu-content">
