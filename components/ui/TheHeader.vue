@@ -23,11 +23,13 @@
           </nuxt-link>
         </li>
       </ul>
+      <Menu class="block sm:hidden" />
     </div>
   </header>
 </template>
 
 <script>
+import { NAV_LINKS } from '@/constants/navLinks'
 import Logo from '~/components/Logo'
 
 export default {
@@ -35,26 +37,15 @@ export default {
   components: {
     Logo,
   },
-  data: () => ({
-    links: [
-      {
-        url: '/blog',
-        name: 'Blog',
-      },
-      {
-        url: '/projects',
-        name: 'Projects',
-      },
-      {
-        url: '/about',
-        name: 'About',
-      },
-    ],
-  }),
+  computed: {
+    links() {
+      return NAV_LINKS
+    },
+  },
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .links:last-child {
   border: 0;
 }

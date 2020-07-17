@@ -1,6 +1,8 @@
 {
   "general": {
-    "altLogo": "Pablo Sirera, desarrollador web frontend | Javascript, Vue y Nuxt"
+    "altLogo": "Pablo Sirera, desarrollador web frontend | Javascript, Vue y Nuxt",
+    "closeMenu": "Cerrar menú",
+    "openMenu": "Abrir menú"
   },
   "months": {
     "april": "Abril",
