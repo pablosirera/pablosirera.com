@@ -6,6 +6,7 @@
         v-for="(tag, index) in cleanTags"
         :key="index"
         :tag="tag"
+        :is-selected="selectedTag === tag"
         class="mr-4"
         @select="selectTag(tag)"
       />
@@ -38,6 +39,9 @@ export default {
     const tags = await $content('blog').only(['tags']).fetch()
     return { posts, tags }
   },
+  data: () => ({
+    selectedTag: null,
+  }),
   computed: {
     cleanTags() {
       if (this.tags.length) {
@@ -53,6 +57,16 @@ export default {
       this.$router.push({ path })
     },
     async selectTag(tag) {
+      if (this.selectedTag === tag) {
+        this.selectedTag = null
+        this.posts = await this.$content('blog')
+          .without(['body', 'toc'])
+          .sortBy('date', 'desc')
+          .fetch()
+        return
+      }
+
+      this.selectedTag = tag
       this.posts = await this.$content('blog')
         .where({ tags: { $contains: [tag] } })
         .without(['body', 'toc'])
