@@ -33,5 +33,5 @@ article > .nuxt-content {
 
 .nuxt-content .yt-video {
   margin: 20px auto;
-  width: 450px;
+  max-width: 450px;
 }

@@ -1,37 +1,43 @@
 <template>
-  <section class="pb-10 items-center md:grid md:grid-cols-2">
-    <div>
-      <!-- TODO: translate and change this text -->
-      <h1 class="text-3xl font-semibold">Hola 👋, soy Pablo Sirera</h1>
-      <div class="h-2 w-24 bg-primary my-3 rounded" />
-      <p>
-        Soy Senior Frontend y actualmente estoy enfocado al mundo del desarrollo
-        web con Vue, Nuxt, JavaScript y Jest, entre otros. Además también he
-        hecho proyectos con Ionic, Angular, React, TypeScript.
-      </p>
-      <br />
-      <p>
-        En mis ratos libres creo proyectos open source (los podéis encontrar en
-        mi cuenta de github) y comparto conocimiento en twitch y youtube. De vez
-        en cuando también escribo artículos en mi blog.
-      </p>
-      <p>
-        Si quieres saber más sobre mi y mi trabajo, puedes seguirme por las
-        redes que dejo 👇👇
-      </p>
-      <!-- TODO: add social links -->
-      <div class="mt-4 mb-8 md:mb-0">
-        <SocialIcons />
+  <section>
+    <section class="pb-10 items-center md:grid md:grid-cols-2">
+      <div>
+        <!-- TODO: translate and change this text -->
+        <h1 class="text-3xl font-semibold">Hola 👋, soy Pablo Sirera</h1>
+        <div class="h-2 w-24 bg-primary my-3 rounded" />
+        <p>
+          Soy Senior Frontend y actualmente estoy enfocado al mundo del
+          desarrollo web con Vue, Nuxt, JavaScript y Jest, entre otros. Además
+          también he hecho proyectos con Ionic, Angular, React, TypeScript.
+        </p>
+        <br />
+        <p>
+          En mis ratos libres creo proyectos open source (los podéis encontrar
+          en mi cuenta de github) y comparto conocimiento en twitch y youtube.
+          De vez en cuando también escribo artículos en mi blog.
+        </p>
+        <p>
+          Si quieres saber más sobre mi y mi trabajo, puedes seguirme por las
+          redes que dejo 👇👇
+        </p>
+        <!-- TODO: add social links -->
+        <div class="mt-4 mb-8 md:mb-0">
+          <SocialIcons />
+        </div>
       </div>
-    </div>
-    <!-- TODO: translate this text -->
-    <div class="image-wrapper">
-      <img
-        class="image"
-        src="/images/desarrollador-web-setup.jpg"
-        alt="desarrollador web valencia"
-      />
-    </div>
+      <!-- TODO: translate this text -->
+      <div class="image-wrapper">
+        <img
+          class="image"
+          src="/images/desarrollador-web-setup.jpg"
+          alt="desarrollador web valencia"
+          loading="lazy"
+        />
+      </div>
+    </section>
+    <section class="md:grid md:grid-cols-2">
+      <YoutubeVideos />
+    </section>
   </section>
 </template>
 
