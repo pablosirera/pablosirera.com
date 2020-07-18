@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="text-center text-xl pb-3">Últimos videos</h2>
+    <h2 class="text-center text-xl pb-3 font-semibold">Últimos videos</h2>
     <a v-for="(video, index) in videos" :key="index" class="flex mb-4">
       <img
         :src="`https://i3.ytimg.com/vi/${video.id}/mqdefault.jpg`"
