@@ -4,11 +4,11 @@
       v-for="(social, index) in socials"
       :key="index"
       :href="social.href"
-      class="mr-3"
+      class="mr-3 w-6 h-6"
       target="_blank"
       :aria-label="social.ariaLabel"
     >
-      <img class="w-6" :src="social.src" :alt="social.alt" loading="lazy" />
+      <component :is="`social-${social.name}`" class="social-icon" />
     </a>
   </div>
 </template>
@@ -16,46 +16,56 @@
 <script>
 export default {
   name: 'SocialIcons',
+  components: {
+    SocialTwitter: () => import('@/static/images/icons/twitter.svg?inline'),
+    SocialInstagram: () => import('@/static/images/icons/instagram.svg?inline'),
+    SocialTwitch: () => import('@/static/images/icons/twitch.svg?inline'),
+    SocialYoutube: () => import('@/static/images/icons/youtube.svg?inline'),
+    SocialLinkedin: () => import('@/static/images/icons/linkedin.svg?inline'),
+    SocialGithub: () => import('@/static/images/icons/github.svg?inline'),
+  },
   data: () => ({
     // TODO: translate this texts and add alt
     socials: [
       {
         href: 'https://twitter.com/pablosirera',
-        src: '/images/icons/twitter.svg',
-        alt: '',
+        name: 'twitter',
         ariaLabel: 'Sígueme en twitter',
       },
       {
         href: 'https://instagram.com/pablodeveloper',
-        src: '/images/icons/instagram.svg',
-        alt: '',
+        name: 'instagram',
         ariaLabel: 'Sígueme en instagram',
       },
       {
         href: 'https://twitch.tv/pablosirera',
-        src: '/images/icons/twitch.svg',
-        alt: '',
+        name: 'twitch',
         ariaLabel: 'Sígueme en twitch',
       },
       {
         href: 'https://youtube.com/user/psirera4',
-        src: '/images/icons/youtube.svg',
-        alt: '',
+        name: 'youtube',
         ariaLabel: 'Subscríbete a mi canal de youtube',
       },
       {
         href: 'https://www.linkedin.com/in/pablosireramata',
-        src: '/images/icons/linkedin.svg',
-        alt: '',
+        name: 'linkedin',
         ariaLabel: 'Sígueme en linkedin',
       },
       {
         href: 'https://github.com/pablosirera',
-        src: '/images/icons/github.svg',
-        alt: '',
+        name: 'github',
         ariaLabel: 'Sígueme en github',
       },
     ],
   }),
 }
 </script>
+
+<style lang="scss" scoped>
+.social-icon {
+  color: var(--icons-color);
+
+  @apply w-6 h-6;
+}
+</style>

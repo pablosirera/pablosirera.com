@@ -57,6 +57,8 @@ export default {
     // Doc: https://github.com/nuxt/content
     '@nuxt/content',
     'nuxt-i18n',
+    '@nuxtjs/color-mode',
+    '@nuxtjs/svg',
     [
       'nuxt-fontawesome',
       {

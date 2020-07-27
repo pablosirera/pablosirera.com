@@ -3,4 +3,11 @@
   --tablet: 768px;
   --desktop: 992px;
   --large-desktop: 1200px;
+  --color: theme('colors.blue-main.900');
+  --bg: theme('colors.white');
+  --icons-color: theme('colors.blue-main.800');
+  --title-color: theme('colors.blue-main.700');
+  --nav-links-color: theme('colors.blue-main.800');
+  --nav-link-active-color: theme('colors.gray-main.600');
+  --tag-bg: theme('colors.white');
 }
