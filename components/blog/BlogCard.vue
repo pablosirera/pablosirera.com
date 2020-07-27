@@ -1,13 +1,12 @@
 <template>
   <div class="post" @click="selectPost">
-    <h1 class="font-semibold text-2xl text-blue-main-700">
+    <h1 class="third-title">
       {{ title }}
     </h1>
     <div class="bottom-post">
       <span class="date">🗓 {{ getDate(date) }}</span>
       <span class="clock-icon flex items-center">
-        <fa icon="clock" class="icon mr-1" />
-        {{ getTimeToReadText(timeToRead) }}
+        ⏱ {{ getTimeToReadText(timeToRead) }}
       </span>
     </div>
     <p class="pt-2">{{ description }}</p>
@@ -83,14 +82,14 @@ $mobile: var(--mobile);
 }
 
 .post:hover {
-  box-shadow: 4px 10px 20px #dadada80;
+  box-shadow: 4px 10px 20px var(--blog-card-shadow);
   transform: translate3d(0, -3px, 0);
 }
 
 .bottom-post {
   padding-top: 5px;
 
-  @apply flex items-center opacity-50;
+  @apply flex items-center;
 
   & span:first-child {
     @apply pr-4;

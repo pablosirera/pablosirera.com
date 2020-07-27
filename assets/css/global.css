@@ -35,6 +35,13 @@ body::-webkit-scrollbar {
   @apply text-3xl text-center;
 }
 
+.third-title,
+h2 {
+  color: var(--title-color);
+
+  @apply text-2xl font-semibold;
+}
+
 .container {
   margin: 0 auto;
 }
@@ -43,14 +50,4 @@ body {
   background-color: var(--bg);
   color: var(--color);
   transition: background-color 0.3s linear;
-}
-
-.dark-mode {
-  --color: theme('colors.gray-main.50');
-  --bg: theme('colors.blue-main.950');
-  --icons-color: theme('colors.white');
-  --title-color: theme('colors.white');
-  --nav-links-color: var(--color);
-  --nav-link-active-color: var(--color);
-  --tag-bg: var(--bg);
 }

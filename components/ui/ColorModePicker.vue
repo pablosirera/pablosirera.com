@@ -28,7 +28,7 @@ export default {
   }),
   methods: {
     getClasses(color) {
-      if (this.$colorMode.unknown) {
+      if (this.$colorMode && this.$colorMode.unknown) {
         return {}
       }
       return {

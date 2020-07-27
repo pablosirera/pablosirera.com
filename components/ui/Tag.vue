@@ -42,11 +42,15 @@ export default {
   @apply flex items-center py-1 px-2 border rounded-lg cursor-pointer;
 
   &:hover {
-    @apply bg-gray-main-100;
+    background-color: var(--tag-bg-hover);
+
+    @apply font-semibold;
   }
 
   &-selected {
-    @apply bg-gray-main-100;
+    background-color: var(--tag-bg-hover);
+
+    @apply font-semibold;
   }
 }
 </style>

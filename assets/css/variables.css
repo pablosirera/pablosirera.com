@@ -10,4 +10,6 @@
   --nav-links-color: theme('colors.blue-main.800');
   --nav-link-active-color: theme('colors.gray-main.600');
   --tag-bg: theme('colors.white');
+  --tag-bg-hover: theme('colors.gray-main.100');
+  --blog-card-shadow: #dadada80;
 }
