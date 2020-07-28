@@ -1,12 +1,18 @@
 <template>
   <div>
     <ul class="flex items-center">
-      <li v-for="color of colors" :key="color">
-        <component
-          :is="`icon-${color}`"
-          :class="getClasses(color)"
+      <li v-if="$colorMode.preference !== 'light'">
+        <IconLight
+          :class="getClasses('light')"
           class="cursor-pointer"
-          @click="$colorMode.preference = color"
+          @click="$colorMode.preference = 'light'"
+        />
+      </li>
+      <li v-else>
+        <IconDark
+          :class="getClasses('dark')"
+          class="cursor-pointer"
+          @click="$colorMode.preference = 'dark'"
         />
       </li>
     </ul>
@@ -14,30 +20,21 @@
 </template>
 
 <script>
-import IconLight from '@/assets/icons/light.svg?inline'
-import IconDark from '@/assets/icons/dark.svg?inline'
-
 export default {
   name: 'ColorModePicker',
   components: {
-    IconLight,
-    IconDark,
+    IconLight: () => import('@/assets/icons/light.svg?inline'),
+    IconDark: () => import('@/assets/icons/dark.svg?inline'),
   },
-  data: () => ({
-    colors: ['light', 'dark'],
-  }),
   methods: {
     getClasses(color) {
       if (this.$colorMode && this.$colorMode.unknown) {
         return {}
       }
       return {
-        preferred: color === this.$colorMode.preference,
+        [this.$colorMode.value]: true,
         selected: color === this.$colorMode.value,
       }
-    },
-    getIconPath(color) {
-      return require(`@/assets/icons/${color}.svg`)
     },
     selectColor(color) {
       this.$colorMode.preference = color
@@ -52,6 +49,10 @@ ul {
 
   li {
     @apply inline-block px-1;
+
+    .dark {
+      fill: theme('colors.white');
+    }
   }
 }
 </style>

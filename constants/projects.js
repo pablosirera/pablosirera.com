@@ -3,7 +3,7 @@ export const PROJECTS = [
     name: 'timeline-vuejs',
     description: 'projects.timeline',
     language: 'Vue',
-    stars: 55,
+    stars: 61,
     forks: 13,
     url: 'https://github.com/pablosirera/timeline-vuejs',
   },

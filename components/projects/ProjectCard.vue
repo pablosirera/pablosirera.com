@@ -1,12 +1,8 @@
 <template>
-  <div class="project-card">
+  <div class="project-card" :class="$colorMode.value">
     <div>
       <div class="wrapper-title">
-        <img
-          src="@/assets/icons/repo.svg"
-          :alt="$t(project.description)"
-          loading="lazy"
-        />
+        <RepoIcon class="icon" />
         <h1 class="title">
           <a :href="project.url" class="title-link">
             {{ project.name }}
@@ -21,28 +17,27 @@
         <span class="language-text">{{ project.language }}</span>
       </span>
       <a class="link" :href="`${project.url}/stargazers`">
-        <img
-          src="@/assets/icons/star.svg"
-          :alt="$t(project.description)"
-          loading="lazy"
-        />
-        {{ project.stars }}
+        <StarIcon class="icon mr-1" /> {{ project.stars }}
       </a>
       <a class="link" :href="`${project.url}/network/members`">
-        <img
-          src="@/assets/icons/repo-forked.svg"
-          :alt="$t(project.description)"
-          loading="lazy"
-        />
-        {{ project.forks }}
+        <ForkedIcon class="icon mr-1" /> {{ project.forks }}
       </a>
     </p>
   </div>
 </template>
 
 <script>
+import RepoIcon from '@/assets/icons/repo.svg?inline'
+import StarIcon from '@/assets/icons/star.svg?inline'
+import ForkedIcon from '@/assets/icons/repo-forked.svg?inline'
+
 export default {
   name: 'ProjectCard',
+  components: {
+    RepoIcon,
+    StarIcon,
+    ForkedIcon,
+  },
   props: {
     project: {
       type: Object,
@@ -65,10 +60,10 @@ export default {
   @apply flex flex-col justify-between text-sm border border-gray-main-200 p-4 mb-4 rounded-sm;
 
   .wrapper-title {
-    @apply flex;
+    @apply flex items-center;
 
     .title {
-      @apply text-sm ml-2;
+      @apply text-sm ml-2 font-semibold;
 
       &-link {
         text-decoration: none;
@@ -92,9 +87,8 @@ export default {
     .dot-language {
       top: 1px;
       border-radius: 50%;
-      margin-right: 3px;
 
-      @apply relative inline-block w-3 h-3;
+      @apply relative inline-block w-3 h-3 mr-1;
 
       &-vue {
         @apply bg-blue-main-800;
@@ -109,7 +103,7 @@ export default {
       text-decoration: none;
       margin-right: 24px;
 
-      @apply text-gray-main-600 flex items-start;
+      @apply text-gray-main-600 flex items-center;
 
       &:hover {
         text-decoration: underline;
@@ -120,6 +114,20 @@ export default {
       img {
         padding-right: 3px;
       }
+    }
+  }
+
+  &.dark {
+    .icon {
+      fill: var(--color);
+    }
+
+    .title-link {
+      color: var(--color);
+    }
+
+    .info .link {
+      color: var(--color);
     }
   }
 }
