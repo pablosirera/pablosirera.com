@@ -1,5 +1,5 @@
 <template>
-  <div class="project-card" :class="$colorMode.value">
+  <div class="project-card" :class="cardClasses">
     <div>
       <div class="wrapper-title">
         <RepoIcon class="icon" />
@@ -45,6 +45,9 @@ export default {
     },
   },
   computed: {
+    cardClasses() {
+      return this.$colorMode.preference
+    },
     dotLanguageClasses() {
       return {
         'dot-language-vue': this.project.language === 'Vue',
@@ -118,6 +121,8 @@ export default {
   }
 
   &.dark {
+    background-color: #a0aec02b;
+
     .icon {
       fill: var(--color);
     }

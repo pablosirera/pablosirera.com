@@ -88,7 +88,6 @@ export default {
    */
   colorMode: {
     preference: 'light',
-    fallback: 'light',
   },
   /*
    ** nuxt-i18n config
