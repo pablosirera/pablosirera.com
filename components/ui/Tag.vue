@@ -1,5 +1,5 @@
 <template>
-  <span :class="tagClasses" class="tag" @click="emitEvent">
+  <span :class="tagClasses" class="tag select-none" @click="emitEvent">
     <img class="w-5 mr-1" :src="`/images/icons/${tag}.png`" loading="lazy" />
     {{ tag }}
   </span>
