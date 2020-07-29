@@ -1,13 +1,13 @@
 <template>
   <div>
     <h1 class="title text-center">Blog</h1>
-    <div class="mt-4 flex justify-center">
+    <div class="mt-4 flex justify-center flex-wrap">
       <Tag
         v-for="(tag, index) in cleanTags"
         :key="index"
         :tag="tag"
         :is-selected="selectedTag === tag"
-        class="mr-4"
+        class="m-2"
         @select="selectTag(tag)"
       />
     </div>
