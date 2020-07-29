@@ -3,6 +3,7 @@ title: 'Crear una aplicación Vue desde cero'
 description: 'Tutorial paso a paso sobre cómo crear una aplicación vue desde cero'
 date: 2020-08-02
 timeToRead: 5
+image: create-vue-app.jpg
 tags:
   - vue
   - firebase

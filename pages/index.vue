@@ -35,8 +35,9 @@
         />
       </div>
     </section>
-    <section class="md:grid md:grid-cols-2">
+    <section class="md:grid md:grid-cols-2 md:gap-8">
       <YoutubeVideos />
+      <ListPosts :posts="posts" />
     </section>
   </section>
 </template>
@@ -44,6 +45,17 @@
 <script>
 export default {
   scrollToTop: true,
+  async asyncData({ $content }) {
+    const posts = await $content('blog')
+      .only(['title', 'slug', 'path', 'image'])
+      .sortBy('date', 'desc')
+      .limit(3)
+      .fetch()
+
+    return {
+      posts,
+    }
+  },
 }
 </script>
 

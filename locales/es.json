@@ -4,6 +4,10 @@
     "closeMenu": "Cerrar menú",
     "openMenu": "Abrir menú"
   },
+  "home": {
+    "lastPosts": "Últimos artículos",
+    "lastVideos": "Últimos videos"
+  },
   "months": {
     "april": "Abril",
     "august": "Agosto",
