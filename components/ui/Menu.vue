@@ -1,5 +1,5 @@
 <template>
-  <div class="menu">
+  <div class="menu mr-2">
     <span @click="toggleMenu">
       <MenuIcon class="w-8 h-8 cursor-pointer menu-icon" />
     </span>
@@ -10,7 +10,7 @@
         class="menu-body bg-primary h-screen w-4/5 absolute top-0 right-0 z-10"
       >
         <span
-          class="close flex justify-end text-white p-3 font-bold text-2xl cursor-pointer"
+          class="close flex justify-end text-white p-5 pt-12 text-2xl cursor-pointer"
           @click="toggleMenu"
         >
           <img
@@ -68,18 +68,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$heightClose: 60px;
-
-.close {
-  height: $heightClose;
-}
-
 .menu-icon {
   fill: theme('colors.primary');
 }
 
 .menu-content {
-  height: calc(100% - 120px);
+  height: calc(100% - 184px);
 
   @apply flex justify-center items-center;
 
