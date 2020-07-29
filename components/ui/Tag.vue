@@ -37,15 +37,20 @@ export default {
 <style lang="scss" scoped>
 .tag {
   transition: background-color 0.5s ease;
+  background-color: var(--tag-bg);
 
-  @apply flex items-center py-1 px-2 border rounded-lg cursor-pointer bg-white;
+  @apply flex items-center py-1 px-2 border rounded-lg cursor-pointer;
 
   &:hover {
-    @apply bg-gray-main-100;
+    background-color: var(--tag-bg-hover);
+
+    @apply font-semibold;
   }
 
   &-selected {
-    @apply bg-gray-main-100;
+    background-color: var(--tag-bg-hover);
+
+    @apply font-semibold;
   }
 }
 </style>

@@ -33,7 +33,7 @@ export default {
   text-decoration: none;
   display: inline-flex;
   color: #fff;
-  background-color: #4fc08d;
+  background-color: theme('colors.primary');
   border-radius: 5px;
   border: 1px solid transparent;
   padding: 7px 10px 7px 10px;

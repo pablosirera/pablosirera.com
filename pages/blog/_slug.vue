@@ -1,11 +1,11 @@
 <template>
   <article class="mb-20">
     <h1 class="text-4xl">{{ doc.title }}</h1>
-    <h2>
+    <p>
       <span>🗓 {{ $d(new Date(doc.date), 'short') }}</span>
       -
       <span>⏱ {{ doc.timeToRead }} {{ $tc('posts.minute', 2) }}</span>
-    </h2>
+    </p>
     <div class="mt-4 flex">
       <Tag
         v-for="(tag, index) in doc.tags"

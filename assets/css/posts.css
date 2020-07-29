@@ -5,9 +5,6 @@ article > .nuxt-content {
 .nuxt-content h2 {
   margin-top: 30px;
   margin-bottom: 10px;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: theme('colors.blue-main.700');
 }
 
 .nuxt-content .vue {
@@ -20,6 +17,10 @@ article > .nuxt-content {
   background-color: theme('colors.blue-main.750');
   color: theme('colors.gray-main.950');
   padding: 0 3px;
+}
+
+.dark-mode .nuxt-content .code {
+  background-color: theme('colors.blue-main.400');
 }
 
 .nuxt-content .nuxt-content-highlight pre {

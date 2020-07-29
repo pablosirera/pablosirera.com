@@ -1,0 +1,15 @@
+.dark-mode {
+  --color: theme('colors.gray-main.400');
+
+  /* --color: theme('colors.gray-main.50'); */
+  --bg: theme('colors.dark');
+
+  /* --bg: theme('colors.blue-main.950'); */
+  --icons-color: theme('colors.white');
+  --title-color: theme('colors.gray-main.400');
+  --nav-links-color: var(--color);
+  --nav-link-active-color: var(--color);
+  --tag-bg: var(--bg);
+  --tag-bg-hover: var(--bg);
+  --blog-card-shadow: var(--bg);
+}
