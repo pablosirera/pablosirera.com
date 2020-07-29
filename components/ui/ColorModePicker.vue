@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ul class="flex items-center">
+    <ul class="flex items-center justify-center">
       <li v-if="$colorMode.preference !== 'light'">
         <IconLight
           :class="getClasses('light')"

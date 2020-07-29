@@ -1,17 +1,12 @@
 <template>
   <div class="menu">
     <span @click="toggleMenu">
-      <img
-        class="w-8 cursor-pointer"
-        src="/images/icons/menu.svg"
-        :alt="$t('general.openMenu')"
-        loading="lazy"
-      />
+      <MenuIcon class="w-8 h-8 cursor-pointer menu-icon" />
     </span>
     <transition name="slide-fade">
       <div
         v-if="showMenu"
-        class="menu-body bg-primary h-screen w-full absolute top-0 left-0 z-10"
+        class="menu-body bg-primary h-screen w-4/5 absolute top-0 right-0 z-10"
       >
         <span
           class="close flex justify-end text-white p-3 font-bold text-2xl cursor-pointer"
@@ -34,6 +29,7 @@
             >
               {{ link.name }}
             </a>
+            <ColorModePicker />
           </div>
         </div>
       </div>
@@ -43,9 +39,13 @@
 
 <script>
 import { NAV_LINKS } from '@/constants/navLinks'
+import MenuIcon from '@/static/images/icons/menu.svg?inline'
 
 export default {
   name: 'Menu',
+  components: {
+    MenuIcon,
+  },
   data: () => ({
     showMenu: false,
   }),
@@ -71,6 +71,10 @@ $heightClose: 60px;
 
 .close {
   height: $heightClose;
+}
+
+.menu-icon {
+  fill: theme('colors.primary');
 }
 
 .menu-content {

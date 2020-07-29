@@ -21,7 +21,7 @@
             </nuxt-link>
           </li>
         </ul>
-        <ColorModePicker />
+        <ColorModePicker class="hidden sm:block" />
         <Menu class="block sm:hidden" />
       </div>
     </div>
