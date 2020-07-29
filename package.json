@@ -28,7 +28,8 @@
     "@nuxtjs/pwa": "^3.0.0-beta.20",
     "nuxt": "^2.13.0",
     "nuxt-fontawesome": "^0.4.0",
-    "nuxt-i18n": "^6.12.2"
+    "nuxt-i18n": "^6.12.2",
+    "v-click-outside": "^3.0.1"
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^1.0.0",

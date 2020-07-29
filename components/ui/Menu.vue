@@ -6,6 +6,7 @@
     <transition name="slide-fade">
       <div
         v-if="showMenu"
+        v-click-outside="toggleMenu"
         class="menu-body bg-primary h-screen w-4/5 absolute top-0 right-0 z-10"
       >
         <span
@@ -29,7 +30,7 @@
             >
               {{ link.name }}
             </a>
-            <ColorModePicker />
+            <ColorModePicker class="p-5" />
           </div>
         </div>
       </div>
