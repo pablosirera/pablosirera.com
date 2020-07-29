@@ -60,7 +60,7 @@ export default {
 
 <style lang="scss" scoped>
 .project-card {
-  @apply flex flex-col justify-between text-sm border border-gray-main-200 p-4 mb-4 rounded-sm;
+  @apply flex flex-col justify-between text-sm border border-gray-main-200 p-4 mb-4 rounded-md;
 
   .wrapper-title {
     @apply flex items-center;
