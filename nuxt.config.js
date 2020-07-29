@@ -130,6 +130,13 @@ export default {
     },
   },
   /*
+   ** Server configuration
+   */
+  // server: {
+  //   port: 3030,
+  //   host: '0.0.0.0',
+  // },
+  /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */

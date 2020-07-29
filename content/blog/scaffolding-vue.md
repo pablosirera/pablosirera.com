@@ -3,6 +3,7 @@ title: 'Estructura de carpetas en Vue'
 description: 'Ejemplo de estructura de carpetas en Vue'
 date: 2020-02-01
 timeToRead: 4
+image: scaffolding-vue.jpg
 tags:
   - vue
 ---
