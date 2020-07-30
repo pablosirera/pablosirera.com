@@ -11,14 +11,8 @@
       >
         <span
           class="close flex justify-end text-white p-5 pt-12 text-2xl cursor-pointer"
-          @click="toggleMenu"
         >
-          <img
-            class="w-6"
-            src="/images/icons/cross.svg"
-            :alt="$t('general.closeMenu')"
-            loading="lazy"
-          />
+          <CrossIcon class="w-6 h-6" @click="toggleMenu" />
         </span>
         <div class="menu-content">
           <div class="text-center flex flex-col p-5">
@@ -46,6 +40,7 @@ export default {
   name: 'Menu',
   components: {
     MenuIcon,
+    CrossIcon: () => import('@/assets/icons/cross.svg?inline'),
   },
   data: () => ({
     showMenu: false,
