@@ -1,11 +1,6 @@
 <template>
   <span :class="tagClasses" class="tag select-none" @click="emitEvent">
-    <img
-      class="w-5 mr-1"
-      :src="`/images/icons/${tag}.png`"
-      loading="lazy"
-      :alt="tag"
-    />
+    <img class="w-5 mr-1" :src="getTagUrl(tag)" loading="lazy" :alt="tag" />
     {{ tag }}
   </span>
 </template>
@@ -34,6 +29,9 @@ export default {
   methods: {
     emitEvent() {
       this.$emit('select', this.tag)
+    },
+    getTagUrl(tag) {
+      return require(`@/assets/icons/${tag}.png`)
     },
   },
 }
