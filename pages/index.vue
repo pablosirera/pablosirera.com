@@ -29,7 +29,7 @@
       <div class="image-wrapper">
         <img
           class="image"
-          src="/images/desarrollador-web-setup.jpg"
+          src="https://res.cloudinary.com/de5xzoviz/image/upload/v1596104201/desarrollador-web-setup.jpg"
           alt="desarrollador web valencia"
           loading="lazy"
         />

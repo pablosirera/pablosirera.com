@@ -40,7 +40,7 @@
 
 <script>
 import { NAV_LINKS } from '@/constants/navLinks'
-import MenuIcon from '@/static/images/icons/menu.svg?inline'
+import MenuIcon from '@/assets/icons/menu.svg?inline'
 
 export default {
   name: 'Menu',

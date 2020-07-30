@@ -17,12 +17,12 @@
 export default {
   name: 'SocialIcons',
   components: {
-    SocialTwitter: () => import('@/static/images/icons/twitter.svg?inline'),
-    SocialInstagram: () => import('@/static/images/icons/instagram.svg?inline'),
-    SocialTwitch: () => import('@/static/images/icons/twitch.svg?inline'),
-    SocialYoutube: () => import('@/static/images/icons/youtube.svg?inline'),
-    SocialLinkedin: () => import('@/static/images/icons/linkedin.svg?inline'),
-    SocialGithub: () => import('@/static/images/icons/github.svg?inline'),
+    SocialTwitter: () => import('@/assets/icons/twitter.svg?inline'),
+    SocialInstagram: () => import('@/assets/icons/instagram.svg?inline'),
+    SocialTwitch: () => import('@/assets/icons/twitch.svg?inline'),
+    SocialYoutube: () => import('@/assets/icons/youtube.svg?inline'),
+    SocialLinkedin: () => import('@/assets/icons/linkedin.svg?inline'),
+    SocialGithub: () => import('@/assets/icons/github.svg?inline'),
   },
   data: () => ({
     // TODO: translate this texts and add alt
