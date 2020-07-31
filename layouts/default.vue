@@ -4,15 +4,6 @@
     <main class="pt-4 container">
       <nuxt />
     </main>
+    <TheFooter />
   </div>
 </template>
-
-<script>
-import TheHeader from '~/components/ui/TheHeader.vue'
-
-export default {
-  components: {
-    TheHeader,
-  },
-}
-</script>
