@@ -29,6 +29,7 @@
     "nuxt": "^2.13.0",
     "nuxt-fontawesome": "^0.4.0",
     "nuxt-i18n": "^6.12.2",
+    "timeline-vuejs": "^1.1.6",
     "v-click-outside": "^3.0.1"
   },
   "devDependencies": {
