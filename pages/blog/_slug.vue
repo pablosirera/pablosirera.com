@@ -56,6 +56,21 @@ export default {
           name: 'og:description',
           content: process.env.APP_DESC,
         },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: `https://res.cloudinary.com/de5xzoviz/image/upload/q_68/${this.doc.image}`,
+        },
+        {
+          hid: 'og:image:secure_url',
+          property: 'og:image',
+          content: `https://res.cloudinary.com/de5xzoviz/image/upload/q_68/${this.doc.image}`,
+        },
+        {
+          hid: 'og:image:alt',
+          property: 'og:image:alt',
+          content: this.doc.title,
+        },
       ],
     }
   },
