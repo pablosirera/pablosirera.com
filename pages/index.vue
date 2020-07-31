@@ -3,25 +3,35 @@
     <section class="pb-10 items-center md:grid md:grid-cols-2">
       <div>
         <!-- TODO: translate and change this text -->
-        <h1 class="text-3xl font-semibold">Hola 👋, soy Pablo Sirera</h1>
+        <h1 class="text-3xl font-semibold">¡Hola 👋! soy Pablo Sirera.</h1>
         <div class="h-2 w-24 bg-primary my-3 rounded" />
         <p>
-          Soy Senior Frontend y actualmente estoy enfocado al mundo del
-          desarrollo web con Vue, Nuxt, JavaScript y Jest, entre otros. Además
-          también he hecho proyectos con Ionic, Angular, React, TypeScript.
+          Soy Senior Frontend Developer actualmente enfocado al mundo del
+          desarrollo web con Vue, Nuxt, JavaScript y Jest, entre otros.
         </p>
         <br />
         <p>
-          En mis ratos libres creo proyectos open source (los podéis encontrar
-          en mi cuenta de github) y comparto conocimiento en twitch y youtube.
-          De vez en cuando también escribo artículos en mi blog.
+          Mi actual objetivo es que puedas aprender fácil y mejorar día a día en
+          el desarrollo frontend.
         </p>
+        <br />
         <p>
-          Si quieres saber más sobre mi y mi trabajo, puedes seguirme por las
-          redes que dejo 👇👇
+          Si quieres saber más sobre mí y sobre mi trabajo, puedes visitar mi
+          blog, mi página sobre mí o seguirme por las redes sociales que dejo
+          aquí bajo 👇👇
         </p>
-        <!-- TODO: add social links -->
-        <div class="mt-4 mb-8 md:mb-0">
+        <div class="flex justify-center my-4">
+          <nuxt-link to="/blog" class="blog-button hover:opacity-75">
+            Blog
+          </nuxt-link>
+          <nuxt-link
+            to="/about"
+            class="about-button hover:bg-primary hover:text-white"
+          >
+            Sobre mí
+          </nuxt-link>
+        </div>
+        <div class="mt-4 mb-8 flex justify-center md:mb-0">
           <SocialIcons />
         </div>
       </div>
@@ -60,6 +70,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.blog-button {
+  @apply bg-primary px-4 py-2 rounded-lg text-xl font-bold text-white mx-2;
+}
+
+.about-button {
+  @apply border border-primary px-4 py-2 rounded-lg text-xl font-bold mx-2;
+}
+
 .image-wrapper {
   @apply rounded flex justify-center;
 

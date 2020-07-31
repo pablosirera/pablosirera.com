@@ -5,10 +5,10 @@ export const NAV_LINKS = [
   },
   {
     url: '/projects',
-    name: 'Projects',
+    name: 'Proyectos',
   },
   {
     url: '/about',
-    name: 'About',
+    name: 'Sobre mí',
   },
 ]

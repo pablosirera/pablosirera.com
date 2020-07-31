@@ -1,20 +1,39 @@
 <template>
   <!-- TODO: improve this text -->
   <section>
-    Soy Pablo Sirera, desarrollador web viviendo en Valencia. Me interesa todo
-    aquello relacionado con el desarrollo web y móvil. Me gusta estar siempre en
-    constante aprendizaje y poner en práctica los conocimientos adquiridos. En
-    mi cuenta personal de
-    <TheLink url="https://github.com/pablosirera">GitHub</TheLink>
-    he creado un repositorio con un
-    <TheLink url="https://github.com/pablosirera/My-Learning-Tracker"
-      >Learning Tracker</TheLink
-    >
-    con información acerca de mi experiencia y mis conocimientos tecnológicos.
-    También puedes seguirme en mi cuenta de
-    <TheLink url="https://www.instagram.com/pablodeveloper">Instagram</TheLink>
-    y en mi cuenta de
-    <TheLink url="https://twitter.com/pablosirera">Twitter</TheLink>
+    <p>
+      ¡Hola 👋! soy <b>Pablo Sirera</b>, desarrollador web viviendo en Valencia.
+    </p>
+    <p>
+      Personalmente me considero una persona que no le gusta estarse quieta,
+      intento estar siempre actualizado (no es tarea fácil 😅). Cómo me gusta
+      tanto estar actualizado y seguir formándome decidí intentar formar yo con
+      los conocimientos que tengo actualmente e intento actualizar día a día.
+    </p>
+    <p>
+      <!-- TODO: add link to blog -->
+      De vez en cuando escribo artículos en mi blog, hago directos en
+      <TheLink url="https://twitch.tv/pablosirera">Twitch</TheLink> aprendiendo
+      en vivo o subo vídeos a
+      <TheLink url="https://youtube.com/psirera4?sub_confirmation=1">
+        Youtube </TheLink
+      >.
+    </p>
+    <p>
+      Considero que es muy importante que compartamos el conocimiento adquirido
+      para que no quede en el olvido y así podamos ayudar 🤝 a los demás.
+    </p>
+    <p>
+      En mi cuenta personal de
+      <TheLink url="https://github.com/pablosirera">GitHub</TheLink>
+      podéis encontrar todo mi trabajo personal que realizo en open source.
+      También podéis seguirme en mi cuenta de
+      <TheLink url="https://www.instagram.com/pablodeveloper"
+        >Instagram</TheLink
+      >
+      en la que suelo subir fotos bien postureras 🤳 o en mi cuenta de
+      <TheLink url="https://twitter.com/pablosirera">Twitter</TheLink>
+    </p>
 
     <section class="mt-6">
       <h2 class="secondary-title pb-3">Experiencia laboral 👨🏼‍💻</h2>
