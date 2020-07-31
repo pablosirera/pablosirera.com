@@ -74,5 +74,38 @@ export default {
         .fetch()
     },
   },
+  head() {
+    return {
+      title: `Blog | ${process.env.APP_TITLE}`,
+      meta: [
+        // TODO: improve descriptions
+        {
+          hid: 'description',
+          name: 'description',
+          content: process.env.APP_DESC,
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: `Blog | ${process.env.APP_TITLE}`,
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: process.env.APP_DESC,
+        },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: `Blog | ${process.env.APP_TITLE}`,
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: process.env.APP_DESC,
+        },
+      ],
+    }
+  },
 }
 </script>

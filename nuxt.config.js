@@ -1,3 +1,5 @@
+import META_INFO from './constants/meta.js'
+
 export default {
   /*
    ** Nuxt rendering mode
@@ -10,16 +12,8 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    title: process.env.npm_package_name || '',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: process.env.npm_package_description || '',
-      },
-    ],
+    title: process.env.APP_TITLE,
+    meta: META_INFO,
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
@@ -48,6 +42,12 @@ export default {
     '@nuxtjs/stylelint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
+    [
+      '@nuxtjs/google-analytics',
+      {
+        id: process.env.GOOGLE_ANALYTICS_ID,
+      },
+    ],
   ],
   /*
    ** Nuxt.js modules
@@ -82,6 +82,14 @@ export default {
         theme: '~/assets/prism-themes/prism-material-oceanic.css',
       },
     },
+  },
+  /*
+   ** env variables
+   */
+  env: {
+    GOOGLE_ANALYTICS_ID: process.env.GOOGLE_ANALYTICS_ID,
+    APP_TITLE: process.env.APP_TITLE,
+    APP_DESC: process.env.APP_DESC,
   },
   /*
    ** color mode config

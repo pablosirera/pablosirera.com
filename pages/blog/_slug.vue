@@ -26,6 +26,39 @@ export default {
     const doc = await $content(`blog/${params.slug}`).fetch()
     return { doc }
   },
+  head() {
+    return {
+      title: `${this.doc.title} | Pablo Sirera 👨🏼‍💻`,
+      meta: [
+        // TODO: improve descriptions
+        {
+          hid: 'description',
+          name: 'description',
+          content: process.env.APP_DESC,
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: `${this.doc.title} | Pablo Sirera 👨🏼‍💻`,
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: process.env.APP_DESC,
+        },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: `${this.doc.title} | Pablo Sirera 👨🏼‍💻`,
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: process.env.APP_DESC,
+        },
+      ],
+    }
+  },
 }
 </script>
 
