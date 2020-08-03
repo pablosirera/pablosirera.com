@@ -42,6 +42,7 @@
         :timeline-items="timelineItems"
         :date-locale="$i18n.locale"
         order="desc"
+        class="timeline"
       />
     </section>
 
@@ -113,3 +114,9 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.timeline {
+  color: var(--color);
+}
+</style>
