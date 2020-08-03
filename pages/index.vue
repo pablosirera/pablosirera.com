@@ -11,14 +11,13 @@
         </p>
         <br />
         <p>
-          Mi actual objetivo es que puedas aprender fácil y mejorar día a día en
+          Mi actual objetivo es que podáis aprender fácil y mejorar día a día en
           el desarrollo frontend.
         </p>
         <br />
         <p>
-          Si quieres saber más sobre mí y sobre mi trabajo, puedes visitar mi
-          blog, mi página sobre mí o seguirme por las redes sociales que dejo
-          aquí bajo 👇👇
+          Si queréis saber más sobre mí o mi trabajo, podéis visitar el blog, mi
+          página o seguirme por las redes sociales que dejo aquí bajo 👇👇
         </p>
         <div class="flex justify-center my-4">
           <nuxt-link to="/blog" class="blog-button hover:opacity-75">
