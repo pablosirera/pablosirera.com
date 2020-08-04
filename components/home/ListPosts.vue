@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="text-center text-xl pb-3 font-semibold">
+    <h2 class="text-3xl font-semibold text-center pb-3">
       {{ $t('home.lastPosts') }}
     </h2>
     <nuxt-link

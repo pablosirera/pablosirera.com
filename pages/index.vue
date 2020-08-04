@@ -44,7 +44,7 @@
         />
       </div>
     </section>
-    <section class="md:grid md:grid-cols-2 md:gap-8">
+    <section class="mt-12 md:grid md:grid-cols-2 md:gap-8">
       <YoutubeVideos />
       <ListPosts :posts="posts" />
     </section>
