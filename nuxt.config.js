@@ -34,7 +34,7 @@ export default {
   plugins: [
     '~/plugins/global.js',
     '~/plugins/directives.js',
-    // '~/plugins/hotjar.js',
+    { src: '~/plugins/hotjar.js', mode: 'client' },
   ],
   /*
    ** Nuxt.js dev-modules
