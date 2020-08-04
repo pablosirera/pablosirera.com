@@ -21,6 +21,7 @@ export default {
         href: 'https://fonts.googleapis.com/css?family=Cookie',
       },
     ],
+    script: [{ src: '/plugins/hotjar.js' }],
   },
   /*
    ** Global CSS
