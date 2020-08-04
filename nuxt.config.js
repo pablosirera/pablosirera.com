@@ -21,7 +21,6 @@ export default {
         href: 'https://fonts.googleapis.com/css?family=Cookie',
       },
     ],
-    script: [{ src: '/plugins/hotjar.js' }],
   },
   /*
    ** Global CSS
@@ -32,7 +31,11 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: ['~/plugins/global.js', '~/plugins/directives.js'],
+  plugins: [
+    '~/plugins/global.js',
+    '~/plugins/directives.js',
+    '~/plugins/hotjar.js',
+  ],
   /*
    ** Nuxt.js dev-modules
    */
