@@ -83,7 +83,6 @@ export default {
   .image {
     width: 385px;
     height: 510px;
-    box-shadow: 0.5rem 0.5rem 0 theme('colors.primary');
 
     @apply rounded;
   }
