@@ -56,6 +56,7 @@ export default {
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt/content
     '@nuxt/content',
+    '@nuxtjs/feed',
     'nuxt-i18n',
     '@nuxtjs/color-mode',
     '@nuxtjs/svg',
@@ -83,6 +84,40 @@ export default {
       },
     },
   },
+  /*
+   **
+   */
+  feed: [
+    {
+      path: '/feed.xml',
+      type: 'rss2',
+      async create(feed) {
+        const baseUrlArticles = 'https://pablosirera.com/blog'
+        const { $content } = require('@nuxt/content')
+
+        feed.options = {
+          title: `Blog | ${process.env.APP_TITLE}`,
+          description: process.env.APP_DESC,
+          link: baseUrlArticles,
+        }
+        const articles = await $content('blog').fetch()
+
+        articles.forEach((article) => {
+          const url = `${baseUrlArticles}/${article.slug}`
+
+          feed.addItem({
+            title: article.title,
+            id: url,
+            link: url,
+            date: new Date(article.date),
+            description: article.description,
+            content: article.summary,
+            author: 'Pablo Sirera',
+          })
+        })
+      },
+    },
+  ],
   /*
    ** env variables
    */

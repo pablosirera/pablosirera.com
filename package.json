@@ -25,6 +25,7 @@
     "@miyaoka/vue-youtube-embed-lite": "^1.1.0",
     "@nuxt/components": "^1.0.6",
     "@nuxt/content": "^1.4.1",
+    "@nuxtjs/feed": "^2.0.0",
     "@nuxtjs/pwa": "^3.0.0-beta.20",
     "nuxt": "^2.13.0",
     "nuxt-fontawesome": "^0.4.0",
