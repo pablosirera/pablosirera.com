@@ -4,7 +4,7 @@
       <div class="wrapper-title">
         <RepoIcon class="icon" />
         <h1 class="title">
-          <a :href="project.url" class="title-link">
+          <a :href="project.url" class="title-link" target="_blank">
             {{ project.name }}
           </a>
         </h1>
@@ -16,10 +16,10 @@
         <span class="dot-language" :class="dotLanguageClasses" />
         <span class="language-text">{{ project.language }}</span>
       </span>
-      <a class="link" :href="`${project.url}/stargazers`">
+      <a class="link" target="_blank" :href="`${project.url}/stargazers`">
         <StarIcon class="icon mr-1" /> {{ project.stars }}
       </a>
-      <a class="link" :href="`${project.url}/network/members`">
+      <a class="link" target="_blank" :href="`${project.url}/network/members`">
         <ForkedIcon class="icon mr-1" /> {{ project.forks }}
       </a>
     </p>

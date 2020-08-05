@@ -3,7 +3,7 @@ export const PROJECTS = [
     name: 'timeline-vuejs',
     description: 'projects.timeline',
     language: 'Vue',
-    stars: 61,
+    stars: 62,
     forks: 13,
     url: 'https://github.com/pablosirera/timeline-vuejs',
   },
@@ -32,12 +32,12 @@ export const PROJECTS = [
     url: 'https://github.com/pablosirera/who-reviews',
   },
   {
-    name: 'pablosirera.github.io',
+    name: 'pablosirera.com',
     description: 'projects.portfolio',
     language: 'Vue',
     stars: 1,
     forks: 0,
-    url: 'https://github.com/pablosirera/pablosirera.github.io',
+    url: 'https://github.com/pablosirera/pablosirera.com',
   },
   {
     name: 'My-Learning-Tracker',
