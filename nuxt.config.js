@@ -104,7 +104,7 @@ export default {
           description: process.env.APP_DESC,
           link: baseUrlArticles,
         }
-        const articles = await $content('blog').fetch()
+        const articles = await $content('blog').sortBy('date', 'desc').fetch()
 
         articles.forEach((article) => {
           const url = `${baseUrlArticles}/${article.slug}`
