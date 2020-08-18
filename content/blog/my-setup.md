@@ -2,7 +2,7 @@
 title: 'Mi actual setup'
 description: 'Repaso y links de mi espacio de trabajo en casa'
 date: 2020-08-17
-timeToRead: 4
+timeToRead: 6
 image: workspace.jpg
 tags:
   - personal
