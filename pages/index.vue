@@ -1,6 +1,6 @@
 <template>
   <section>
-    <section class="pb-10 items-center md:grid md:grid-cols-2">
+    <section class="pb-10 items-center md:grid md:grid-cols-2 md:gap-4">
       <div>
         <!-- TODO: translate and change this text -->
         <h1 class="text-3xl font-semibold">¡Hola 👋! soy Pablo Sirera.</h1>
