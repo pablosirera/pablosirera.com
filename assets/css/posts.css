@@ -2,9 +2,15 @@ article > .nuxt-content {
   font-size: 1.125rem;
 }
 
-.nuxt-content h2 {
+.nuxt-content h2,
+.nuxt-content h3 {
   margin-top: 30px;
   margin-bottom: 10px;
+}
+
+.nuxt-content ul {
+  list-style: circle;
+  margin-left: 1rem;
 }
 
 .nuxt-content .vue {

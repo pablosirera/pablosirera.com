@@ -42,6 +42,12 @@ h2 {
   @apply text-2xl font-semibold;
 }
 
+h3 {
+  color: var(--title-color);
+
+  @apply text-lg font-semibold;
+}
+
 .container {
   margin: 0 auto;
 }
