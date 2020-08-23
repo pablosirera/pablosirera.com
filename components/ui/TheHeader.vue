@@ -1,14 +1,12 @@
 <template>
   <header class="py-5">
     <div class="container flex justify-between items-center">
-      <div class="flex items-center">
-        <nuxt-link to="/">
-          <Logo />
-        </nuxt-link>
+      <nuxt-link to="/" class="flex items-center">
+        <Logo />
         <h1 class="secondary-title ml-4">
           Pablo Sirera
         </h1>
-      </div>
+      </nuxt-link>
       <div class="flex items-center">
         <ul class="text-center hidden sm:flex">
           <li
