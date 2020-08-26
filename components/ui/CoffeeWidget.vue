@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-center flex-col items-center mt-8">
-    <h2 class="pb-4 text-lg">¿Te gusta mi contenido?</h2>
+    <h2 class="pb-4 text-lg">¿Te gusta el contenido?</h2>
     <a
       class="coffee-button"
       target="_blank"
