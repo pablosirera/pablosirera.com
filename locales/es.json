@@ -26,6 +26,7 @@
     "minute": "minuto | minutos"
   },
   "projects": {
+    "githubRanking": "🚀 Crea tu ranking sobre contribuciones de github",
     "learningTracker": "Learning tracker sobre mis conocimientos.",
     "nearestBin": "🗑 Busca tu papelera más cercana",
     "portfolio": "Mi portfolio ✌️",

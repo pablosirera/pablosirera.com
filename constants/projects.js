@@ -1,9 +1,17 @@
 export const PROJECTS = [
   {
+    name: 'pablosirera.com',
+    description: 'projects.portfolio',
+    language: 'Vue',
+    stars: 2,
+    forks: 1,
+    url: 'https://github.com/pablosirera/pablosirera.com',
+  },
+  {
     name: 'timeline-vuejs',
     description: 'projects.timeline',
     language: 'Vue',
-    stars: 62,
+    stars: 64,
     forks: 13,
     url: 'https://github.com/pablosirera/timeline-vuejs',
   },
@@ -14,6 +22,13 @@ export const PROJECTS = [
     stars: 2,
     forks: 0,
     url: 'https://github.com/pablosirera/tracking-plants',
+  },
+  {
+    name: 'github-ranking',
+    description: 'projects.githubRanking',
+    stars: 5,
+    forks: 0,
+    url: 'https://github.com/pablosirera/github-ranking',
   },
   {
     name: 'nearest-bin',
@@ -30,20 +45,5 @@ export const PROJECTS = [
     stars: 0,
     forks: 0,
     url: 'https://github.com/pablosirera/who-reviews',
-  },
-  {
-    name: 'pablosirera.com',
-    description: 'projects.portfolio',
-    language: 'Vue',
-    stars: 1,
-    forks: 0,
-    url: 'https://github.com/pablosirera/pablosirera.com',
-  },
-  {
-    name: 'My-Learning-Tracker',
-    description: 'projects.learningTracker',
-    stars: 2,
-    forks: 0,
-    url: 'https://github.com/pablosirera/My-Learning-Tracker',
   },
 ]
