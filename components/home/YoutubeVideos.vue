@@ -4,13 +4,13 @@
       {{ $t('home.lastVideos') }}
     </h2>
     <a
-      v-for="(video, index) in videos"
+      v-for="(video, index) in allVideos"
       :key="index"
       class="flex justify-start mb-4 cursor-pointer p-2 rounded hover:bg-green-main-700-40"
-      @click="showVideo(video.id)"
+      @click="showVideo(video.shortId)"
     >
       <img
-        :src="`https://i3.ytimg.com/vi/${video.id}/mqdefault.jpg`"
+        :src="`https://i3.ytimg.com/vi/${video.shortId}/mqdefault.jpg`"
         :alt="video.title"
         loading="lazy"
         class="w-40 h-24 rounded"
@@ -43,27 +43,27 @@
 <script>
 export default {
   name: 'YoutubeVideos',
+  props: {
+    videos: {
+      type: Array,
+      default: () => [],
+    },
+  },
   data: () => ({
     shouldShowVideo: false,
     videoId: null,
-    // TODO: maybe translate this
-    // TODO: integrate with youtube api
-    videos: [
-      {
-        title: 'Añadir modo oscuro a una aplicación VUE | 🔴 Live Coding #12',
-        id: 'FcxlrEwrJkw',
-      },
-      {
-        title:
-          'Mejorando nuestra aplicación con Vue y FIREBASE | 🔴 Live Coding #11',
-        id: 'McZZrYNBhTc',
-      },
-      {
-        title: 'Crear un blog con Nuxt y Nuxt Content + SEO tips | 🔴 Live',
-        id: '1W_3c7O9E8k',
-      },
-    ],
   }),
+  computed: {
+    allVideos() {
+      return this.videos.map((video) => {
+        return {
+          title: video.snippet.title,
+          id: video.id,
+          shortId: video.snippet.resourceId.videoId,
+        }
+      })
+    },
+  },
   methods: {
     showVideo(videoId) {
       this.videoId = videoId
