@@ -8,6 +8,12 @@
         :project="project"
       />
     </section>
+    <p class="text-center">
+      {{ $t('projects.showMore') }}
+      <TheLink url="https://github.com/pablosirera">
+        {{ $t('projects.githubProfile') }}
+      </TheLink>
+    </p>
   </section>
 </template>
 

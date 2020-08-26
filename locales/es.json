@@ -26,10 +26,12 @@
     "minute": "minuto | minutos"
   },
   "projects": {
+    "githubProfile": "perfil de Github",
     "githubRanking": "🚀 Crea tu ranking sobre contribuciones de github",
     "learningTracker": "Learning tracker sobre mis conocimientos.",
     "nearestBin": "🗑 Busca tu papelera más cercana",
     "portfolio": "Mi portfolio ✌️",
+    "showMore": "Si quieres ver más proyectos visita mi",
     "timeline": "Timeline minimalista ⏳ con VueJS 💚.",
     "title": "Mis proyectos",
     "titleSEO": "Lista de proyectos personales | Pablo Sirera",
