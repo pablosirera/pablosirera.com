@@ -1,0 +1,4 @@
+'feature 🍻': ['feature/*', 'feat/*']
+'bug 🐛': fix/*
+chore: chore/*
+fixed-branch: fixed-branch-name
