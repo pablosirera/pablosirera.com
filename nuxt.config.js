@@ -129,6 +129,7 @@ export default {
     GOOGLE_ANALYTICS_ID: process.env.GOOGLE_ANALYTICS_ID,
     APP_TITLE: process.env.APP_TITLE,
     APP_DESC: process.env.APP_DESC,
+    YOUTUBE_API_KEY: process.env.YOUTUBE_API_KEY,
   },
   /*
    ** color mode config

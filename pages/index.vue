@@ -44,8 +44,8 @@
         />
       </div>
     </section>
-    <section class="mt-12 md:grid md:grid-cols-2 md:gap-8">
-      <YoutubeVideos />
+    <section class="mt-12 md:grid md:grid-cols-2 md:gap-4">
+      <YoutubeVideos :videos="videos" />
       <ListPosts :posts="posts" />
     </section>
   </section>
@@ -61,8 +61,15 @@ export default {
       .limit(3)
       .fetch()
 
+    const videosResponse = await fetch(
+      `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=UUl41m8HBifhzM6Dh1V04wqA&maxResults=3&key=${process.env.YOUTUBE_API_KEY}`
+    )
+    const jsonVideos = await videosResponse.json()
+    const videos = jsonVideos.items
+
     return {
       posts,
+      videos,
     }
   },
 }
