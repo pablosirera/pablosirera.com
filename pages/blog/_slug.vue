@@ -34,7 +34,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: process.env.APP_DESC,
+          content: this.doc.description,
         },
         {
           hid: 'twitter:title',
@@ -44,7 +44,7 @@ export default {
         {
           hid: 'twitter:description',
           name: 'twitter:description',
-          content: process.env.APP_DESC,
+          content: this.doc.description,
         },
         {
           hid: 'og:title',
@@ -54,7 +54,7 @@ export default {
         {
           hid: 'og:description',
           name: 'og:description',
-          content: process.env.APP_DESC,
+          content: this.doc.description,
         },
         {
           hid: 'og:image',

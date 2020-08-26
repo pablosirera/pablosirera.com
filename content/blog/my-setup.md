@@ -1,6 +1,6 @@
 ---
 title: 'Mi actual setup'
-description: 'Repaso y links de mi espacio de trabajo en casa'
+description: 'Repaso y links de mi espacio de trabajo o setup en casa como desarrollador web.'
 date: 2020-08-17
 timeToRead: 6
 image: workspace.jpg

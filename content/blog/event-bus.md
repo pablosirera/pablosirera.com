@@ -1,6 +1,6 @@
 ---
 title: 'Bus de Eventos global con Vue'
-description: 'Ejemplo de bus de eventos en Vue'
+description: 'Explicación sobre el patrón event bus gestionado en una aplicación Vue'
 date: 2019-05-01
 timeToRead: 3
 image: event-bus-pattern.jpg

@@ -1,6 +1,6 @@
 ---
 title: 'Desconectar para volver a conectar'
-description: 'Breve reflexión sobre la importancia de desconectar de vez en cuando'
+description: 'Breve reflexión sobre la importancia de desconectar para posteriormente volver a conectar.'
 date: 2020-06-21
 timeToRead: 4
 image: disconnect.jpg

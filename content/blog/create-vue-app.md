@@ -1,6 +1,6 @@
 ---
 title: 'Crear una aplicación Vue desde cero'
-description: 'Tutorial paso a paso sobre cómo crear una aplicación vue desde cero'
+description: 'Curso sobre cómo crear una aplicación vue paso a paso desde cero con estas clases en vivo gratis.'
 date: 2020-08-02
 timeToRead: 5
 image: create-vue-app.jpg
