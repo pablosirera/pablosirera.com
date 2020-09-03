@@ -64,6 +64,7 @@ export default {
     'nuxt-i18n',
     '@nuxtjs/color-mode',
     '@nuxtjs/svg',
+    '@nuxtjs/sitemap',
     [
       'nuxt-fontawesome',
       {
@@ -89,7 +90,36 @@ export default {
     },
   },
   /*
-   **
+   ** Sitemap Configuration
+   */
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: 'https://pablosirera.com',
+    cacheTime: 1000 * 60 * 15,
+    gzip: true,
+    generate: false,
+    routes: [
+      '/',
+      '/projects',
+      '/about',
+      '/social',
+      '/blog',
+      '/blog/scaffolding-vue',
+      '/blog/my-setup',
+      '/blog/event-bus',
+      '/blog/disconnect',
+      '/blog/deploy-vue-app',
+      '/blog/create-vue-app',
+      '/blog/add-i18n-vue',
+    ].map((route) => ({
+      url: route,
+      changefreq: 'monthly',
+      priority: 1,
+      lastmodISO: new Date().toISOString().split('T')[0],
+    })),
+  },
+  /*
+   ** RSS Feed configuration
    */
   feed: [
     {
