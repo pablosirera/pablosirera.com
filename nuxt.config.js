@@ -15,10 +15,26 @@ export default {
     title: process.env.APP_TITLE,
     meta: META_INFO,
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '32x32',
+        href: '~/assets/img/favicon-32x32.png',
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '16x16',
+        href: '~/assets/img/favicon-16x16.png',
+      },
       {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css?family=Cookie',
+      },
+      {
+        rel: 'apple-touch-icon',
+        sizes: '60x60',
+        href: '~/assets/img/apple-touch-icon.png',
       },
     ],
   },
