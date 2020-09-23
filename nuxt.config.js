@@ -38,6 +38,15 @@ export default {
       },
     ],
   },
+  generate: {
+    async routes() {
+      const { $content } = require('@nuxt/content')
+      const dynamicRoutes = await $content('blog').only(['slug']).fetch()
+      return dynamicRoutes.map((myRoute) =>
+        myRoute.slug === '/index' ? '/' : `/blog/${myRoute.slug}`
+      )
+    },
+  },
   /*
    ** Global CSS
    */
