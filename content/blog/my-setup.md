@@ -57,7 +57,7 @@ Dejo por aquí un listado de los requisitos de cada uno:
 - Gráficos: Intel Iris Graphics 6100 1536 MB
 - Almacenamiento: 128gb SSD
 
-### Monitores
+## Monitores
 
 Después de un tiempo con solo un monitor y el portátil decidí ampliar a otro más. Aunque hay gente que defiende que no necesitamos más monitores para hacer más en mi caso no es así. Trabajar con varios monitores me ayuda a dividir en cada pantalla una cosa diferente. En lineas generales suelo tener en la pantalla del mac los chats, en la principal el código, en la vertical el navegador y la terminal bajo. Respecto a la compra de los monitores estuve mirando bastantes modelos y finalmente me decanté por el que tengo actualmente que son dos monitores <the-link url="https://www.philips.es/c-p/226E9QSB_00/monitor-lcd">Philips 226E</the-link> y son de 22” cada una.
 
@@ -82,7 +82,7 @@ Por otra parte también compré un soporte para el portátil ya que ayuda a visu
 
 También lo compré en <the-link url="https://www.amazon.es/gp/product/B00WRDS0AU/ref=ppx_yo_dt_b_asin_title_o06_s00?ie=UTF8&psc=1">Amazon</the-link>.
 
-### Adaptadores
+## Adaptadores
 
 Como bien sabéis si tenéis Mac hace falta algún adaptador que otro para poder hacer uso de usb, hdmi, etc. Actualmente tengo 2 para poder conectar las dos pantallas. Uno con un puerto html, 3 puertos usb 3.0 y un puerto thunderbolt. El otro adaptador tiene un puerto hdmi, 3 puertos usb y un lector de tarjetas. Me gustaría tener solamente uno con dos puertos hdmi, pero no encuentro ninguno que me encaje.
 
@@ -90,7 +90,7 @@ Como bien sabéis si tenéis Mac hace falta algún adaptador que otro para poder
 
 Dejo enlace del <the-link url="https://www.amazon.es/gp/product/B07RRPS5NT/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1">segundo adaptador</the-link> ya que el primero no lo localizo.
 
-### Ratón/Mouse
+## Ratón/Mouse
 
 En mi opinión un ratón es lo segundo más importante después de la pantalla. El ratón lo usamos prácticamente todo el día por lo que tenemos que tener en cuenta que no nos sirve cualquier ratón si queremos que nuestra muñeca dure años 😂 . Es importante recalcar también que no todos los ratones sirven para todo el mundo.
 
@@ -99,11 +99,11 @@ En mi opinión un ratón es lo segundo más importante después de la pantalla. 
 
 Yo actualmente tengo 3 ratones y unos los uso más que otros lógicamente. Como principal tengo un <the-link url="https://www.amazon.es/gp/product/B01MQE8CJW/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&psc=1">Corsair Harpoon RGB</the-link> que es el que más uso en el día a día. Después, tengo un <the-link url="https://www.apple.com/es/shop/product/MLA02ZM/A/rat%C3%B3n-magic-mouse-2-plata">Magic Mouse 2</the-link> que inicialmente es el que más usaba, pero la ergonomía no es su fuerte así que lo uso sobretodo cuando voy a lo oficina o alguna cafetería ya que ocupa poco. Por último, me compré no hace mucho un <the-link url="https://es.aliexpress.com/item/4000250199090.html?spm=a2g0s.9042311.0.0.8e4963c085sw6D">ratón vertical</the-link> para probar que tal me funcionaba a mi. Como no quería invertir mucho dinero me lo compré en aliexpress bastante económico y sorprendentemente va genial.
 
-### Teclado
+## Teclado
 
 Como teclado tengo el indiscutible <the-link url="https://www.apple.com/es/shop/product/MLA22Y/A/magic-keyboard-espa%C3%B1ol">magic keyboard</the-link>. Digo indiscutible porque he probado otros y sigo quedándome con el mismo. Es un teclado que es pequeño y muy cómodo a la hora de escribir. Tiene un peso muy ligero y la batería dura mucho.
 
-### Auriculares
+## Auriculares
 
 Este es otro accesorio al que estamos todo el día conectados. Ya que no solo lo usamos para trabajar sino que la mayoría lo usamos para ir por la calle, jugar y demás.
 
@@ -112,11 +112,11 @@ En mi caso dispongo de la primera versión de los <the-link url="https://www.app
 <custom-image :classes="['md:w-1/2']" src="https://res.cloudinary.com/de5xzoviz/image/upload/v1597734061/auriculares.jpg" alt="auriculares">
 </custom-image>
 
-### Iluminación
+## Iluminación
 
 En cuanto a la iluminación ambiental y para los directos en Twitch uso dos focos que los compré en <the-link url="https://www.amazon.es/gp/product/B07YFY7H7J/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1">Amazon</the-link>. La verdad es que iluminan muy bien, ocupan poco, puedes regular la intensidad y viene con filtros de colores. De normal yo suelo usar uno para dar luz a mi cara y otro luz ambiental.
 
-### Extras
+## Extras
 
 Para finalizar dejaré otros accesorios que tengo por mi oficina que yo creo que pueden ser interesantes.
 
