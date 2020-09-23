@@ -24,7 +24,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.13.1",
     "@miyaoka/vue-youtube-embed-lite": "^1.1.0",
     "@nuxt/components": "^1.0.6",
-    "@nuxt/content": "^1.4.1",
+    "@nuxt/content": "^1.9.0",
     "@nuxtjs/feed": "^2.0.0",
     "@nuxtjs/pwa": "^3.0.0-beta.20",
     "@nuxtjs/sitemap": "^2.4.0",

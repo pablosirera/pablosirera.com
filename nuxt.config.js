@@ -201,6 +201,7 @@ export default {
     ],
     seo: true,
     lazy: true,
+    strategy: 'no_prefix',
     defaultLocale: 'es',
     langDir: 'locales/',
     vueI18n: {
