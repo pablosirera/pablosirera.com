@@ -73,7 +73,6 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt/content
     '@nuxt/content',
     '@nuxtjs/feed',
@@ -93,6 +92,7 @@ export default {
         ],
       },
     ],
+    '@nuxtjs/pwa',
   ],
   /*
    ** Content module configuration
