@@ -43,7 +43,7 @@ export default {
         ariaLabel: 'Sígueme en twitch',
       },
       {
-        href: 'https://youtube.com/psirera4?sub_confirmation=1',
+        href: 'https://youtube.com/pablosirera?sub_confirmation=1',
         name: 'youtube',
         ariaLabel: 'Subscríbete a mi canal de youtube',
       },
