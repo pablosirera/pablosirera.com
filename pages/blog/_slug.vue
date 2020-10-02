@@ -5,10 +5,14 @@
     </aside>
     <article class="mb-20">
       <h1 class="text-4xl">{{ doc.title }}</h1>
-      <p>
+      <p class="opacity-50">
         <span>🗓 {{ $d(new Date(doc.date), 'short') }}</span>
         -
         <span>⏱ {{ doc.timeToRead }} {{ $tc('posts.minute', 2) }}</span>
+      </p>
+      <p class="mt-1">
+        ¿Un error 😱 ? Edita con una
+        <TheLink :url="urlPullRequest">Pull Request</TheLink>
       </p>
       <div class="mt-4 flex">
         <Tag
@@ -30,6 +34,11 @@ export default {
   async asyncData({ $content, params }) {
     const doc = await $content(`blog/${params.slug}`).fetch()
     return { doc }
+  },
+  computed: {
+    urlPullRequest() {
+      return `https://github.com/pablosirera/pablosirera.com/tree/master/content/blog/${this.doc.slug}.md`
+    },
   },
   head() {
     return {
