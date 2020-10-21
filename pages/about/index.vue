@@ -12,7 +12,9 @@
     </p>
     <p>
       <!-- TODO: add link to blog -->
-      De vez en cuando escribo artículos en mi blog, hago directos en
+      De vez en cuando escribo artículos en mi
+      <TheLink :is-local-route="true" url="/blog">blog</TheLink>, hago directos
+      en
       <TheLink url="https://twitch.tv/pablosirera">Twitch</TheLink> aprendiendo
       en vivo o subo vídeos a
       <TheLink url="https://youtube.com/psirera4?sub_confirmation=1">

@@ -1,5 +1,5 @@
 <template>
-  <a class="link" target="_blank" :href="url">
+  <a class="link cursor-pointer" @click="goToUrl">
     <slot />
   </a>
 </template>
@@ -11,6 +11,20 @@ export default {
     url: {
       type: String,
       required: true,
+    },
+    isLocalRoute: {
+      type: Boolean,
+      default: false,
+    },
+  },
+  methods: {
+    goToUrl() {
+      if (this.isLocalRoute) {
+        this.$router.push(this.url)
+        return
+      }
+
+      window.open(this.url, '_blank')
     },
   },
 }
