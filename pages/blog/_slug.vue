@@ -44,7 +44,6 @@ export default {
     return {
       title: `${this.doc.title} | Pablo Sirera 👨🏼‍💻`,
       meta: [
-        // TODO: improve descriptions
         {
           hid: 'description',
           name: 'description',
