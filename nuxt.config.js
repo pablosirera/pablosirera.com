@@ -89,6 +89,7 @@ export default {
     '@nuxtjs/color-mode',
     '@nuxtjs/svg',
     '@nuxtjs/sitemap',
+    '@nuxtjs/robots',
     [
       'nuxt-fontawesome',
       {
