@@ -1,5 +1,5 @@
 ---
-title: 'Mi actual setup'
+title: 'Mi setup como desarrollador web'
 description: 'Repaso y links de mi espacio de trabajo o setup en casa como desarrollador web.'
 date: 2020-08-17
 timeToRead: 6
