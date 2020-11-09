@@ -4,7 +4,7 @@
     <a
       class="coffee-button"
       target="_blank"
-      href="https://www.buymeacoffee.com/VD4nJSu"
+      href="https://www.buymeacoffee.com/pablosirera"
     >
       <img
         src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
