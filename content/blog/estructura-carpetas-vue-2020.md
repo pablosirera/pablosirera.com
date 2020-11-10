@@ -1,5 +1,5 @@
 ---
-title: 'Estructura de carpetas en Vue'
+title: 'Estructura de carpetas en Vue 2020'
 description: 'Explicación sobre la estructura de carpetas en Vue que suelo usar habitualmente.'
 date: 2020-02-01
 timeToRead: 4
