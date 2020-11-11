@@ -36,12 +36,27 @@
       </div>
       <!-- TODO: translate this text -->
       <div class="image-wrapper">
-        <img
-          class="image"
-          src="https://res.cloudinary.com/de5xzoviz/image/upload/v1596104201/desarrollador-web-setup.jpg"
-          alt="desarrollador web valencia"
-          loading="lazy"
-        />
+        <picture>
+          <!-- Cloudinary no sabe generar esta imagen 🤔🤷🏻‍♂️ -->
+          <!-- <source
+            type="image/avif"
+            srcset="
+              https://res.cloudinary.com/de5xzoviz/image/upload/q_25,f_avif/v1596104201/desarrollador-web-setup.avif
+            "
+          > -->
+          <source
+            type="image/webp"
+            srcset="
+              https://res.cloudinary.com/de5xzoviz/image/upload/q_25/v1596104201/desarrollador-web-setup.webp
+            "
+          >
+          <img
+            class="image"
+            src="https://res.cloudinary.com/de5xzoviz/image/upload/q_25/v1596104201/desarrollador-web-setup.jpg"
+            alt="desarrollador web valencia"
+            loading="lazy"
+          >
+        </picture>
       </div>
     </section>
     <section class="mt-12 md:grid md:grid-cols-2 md:gap-4">
