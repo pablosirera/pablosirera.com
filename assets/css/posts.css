@@ -42,3 +42,10 @@ article > .nuxt-content {
   margin: 20px auto;
   max-width: 450px;
 }
+
+.nuxt-content blockquote {
+  border-left: 2px solid theme('colors.primary');
+  font-style: italic;
+  padding: 0.5rem 0.75rem;
+  margin: 0.5rem 0;
+}

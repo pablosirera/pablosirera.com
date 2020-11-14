@@ -5,7 +5,7 @@
     </aside>
     <article class="mb-20">
       <h1 class="text-4xl">{{ doc.title }}</h1>
-      <p class="opacity-50">
+      <p>
         <span>🗓 {{ $d(new Date(doc.date), 'short') }}</span>
         -
         <span>⏱ {{ doc.timeToRead }} {{ $tc('posts.minute', 2) }}</span>
@@ -106,6 +106,6 @@ export default {
 }
 
 .divider {
-  @apply border-4 border-primary w-16 rounded mt-4 mb-8;
+  @apply border-2 border-primary w-40 rounded mt-4 mb-8;
 }
 </style>
