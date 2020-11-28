@@ -3,6 +3,9 @@
     <div class="container flex justify-between items-center">
       <nuxt-link to="/" class="flex items-center">
         <Logo />
+        <h1 class="secondary-title ml-4">
+          Pablo Sirera
+        </h1>
       </nuxt-link>
       <div class="flex items-center">
         <ul class="text-center hidden sm:flex">

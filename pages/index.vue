@@ -3,7 +3,9 @@
     <section class="pb-10 items-center md:grid md:grid-cols-2 md:gap-4">
       <div>
         <!-- TODO: translate and change this text -->
-        <h1 class="text-3xl font-semibold">¡Hola 👋! soy Pablo Sirera.</h1>
+        <h1 class="text-3xl font-semibold">
+          Hola <span class="salute">👋</span>
+        </h1>
         <div class="h-2 w-24 bg-primary my-3 rounded" />
         <p>
           Soy Senior Frontend Developer actualmente enfocado al mundo del
@@ -93,5 +95,13 @@ export default {
 
     @apply rounded;
   }
+}
+
+.salute {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
 }
 </style>
