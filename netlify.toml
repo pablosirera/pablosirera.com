@@ -1,0 +1,5 @@
+[[headers]]
+  for = "*.avif"
+  [headers.values]
+    Content-Type = "image/avif"
+    Content-Disposition = "inline"
