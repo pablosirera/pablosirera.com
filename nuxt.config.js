@@ -99,6 +99,7 @@ export default {
       },
     ],
     '@nuxtjs/pwa',
+    '@/modules/sitemapRouteGenerator',
   ],
   /*
    ** Content module configuration
@@ -118,27 +119,7 @@ export default {
     path: '/sitemap.xml',
     hostname: 'https://pablosirera.com',
     cacheTime: 1000 * 60 * 15,
-    gzip: true,
-    generate: false,
-    routes: [
-      '/',
-      '/projects',
-      '/about',
-      '/social',
-      '/blog',
-      '/blog/el-mejor-setup-como-desarrollador-web',
-      '/blog/curso-sobre-como-crear-una-aplicacion-vue-desde-cero',
-      '/blog/desconectar-para-volver-a-conectar',
-      '/blog/estructura-carpetas-vue-2020',
-      '/blog/bus-eventos-vue',
-      '/blog/añadir-i18n-aplicacion-vue',
-      '/blog/deploy-vue-app',
-    ].map((route) => ({
-      url: route,
-      changefreq: 'monthly',
-      priority: 1,
-      lastmodISO: new Date().toISOString().split('T')[0],
-    })),
+    exclude: ['/social'],
   },
   /*
    ** RSS Feed configuration
