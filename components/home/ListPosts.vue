@@ -7,15 +7,14 @@
       v-for="post in posts"
       :key="post.slug"
       :to="post.path"
-      class="link flex md:justify-end mb-4 rounded p-2 hover:bg-green-main-700-40"
+      class="link flex justify-start mb-4 rounded p-2 hover:bg-green-main-700-40"
     >
-      <h4 class="hidden md:block pr-3 text-right">{{ post.title }}</h4>
       <img
         :src="`https://res.cloudinary.com/de5xzoviz/image/upload/q_68/${post.image}`"
         :alt="post.title"
-        class="rounded mr-3 md:mr-0"
+        class="rounded mr-3"
       />
-      <h4 class="block md:hidden text-left">{{ post.title }}</h4>
+      <h4 class="text-left">{{ post.title }}</h4>
     </nuxt-link>
   </div>
 </template>
