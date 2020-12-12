@@ -40,8 +40,8 @@
       <div class="image-wrapper">
         <img
           class="image"
-          src="https://res.cloudinary.com/de5xzoviz/image/upload/v1596104201/desarrollador-web-setup.jpg"
-          alt="desarrollador web valencia"
+          src="https://res.cloudinary.com/de5xzoviz/image/upload/v1597688488/setup-desarrollador-web.jpg"
+          alt="setup desarrollador web valencia"
           loading="lazy"
         />
       </div>
@@ -90,9 +90,6 @@ export default {
   @apply rounded flex justify-center;
 
   .image {
-    width: 385px;
-    height: 510px;
-
     @apply rounded;
   }
 }

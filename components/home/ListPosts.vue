@@ -10,7 +10,7 @@
       class="link flex justify-start mb-4 rounded p-2 hover:bg-green-main-700-40"
     >
       <img
-        :src="`https://res.cloudinary.com/de5xzoviz/image/upload/q_68/${post.image}`"
+        :src="`https://res.cloudinary.com/de5xzoviz/image/upload/q_68/v1597688488/${post.image}`"
         :alt="post.title"
         class="rounded mr-3"
       />

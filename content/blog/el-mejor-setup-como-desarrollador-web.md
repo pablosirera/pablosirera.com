@@ -3,12 +3,12 @@ title: 'El mejor setup como desarrollador web'
 description: 'Repaso y links de mi espacio de trabajo o setup en casa como desarrollador web.'
 date: 2020-08-17
 timeToRead: 6
-image: workspace.jpg
+image: setup-desarrollador-web.jpg
 tags:
   - personal
 ---
 
-<custom-image src="https://res.cloudinary.com/de5xzoviz/image/upload/v1597688488/workspace.jpg" alt="mi espacio de trabajo en casa">
+<custom-image src="https://res.cloudinary.com/de5xzoviz/image/upload/v1597688488/setup-desarrollador-web.jpg" alt="mi espacio de trabajo en casa">
 </custom-image>
 
 Hace ya algún tiempo que empecé en el mundo de la programación y a programar en casa. Recuerdo mis primeros setups que iba creando y cómo fueron evolucionando hasta llegar al que tengo hoy por hoy, que ya anticipo que no es el definitivo 😂 .
