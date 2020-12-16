@@ -9,6 +9,7 @@
       </nuxt-link>
       <div class="flex items-center">
         <ul class="text-center hidden sm:flex">
+          <ColorModePicker class="hidden sm:block" />
           <li
             v-for="(link, index) in links"
             :key="index"
@@ -19,7 +20,6 @@
             </nuxt-link>
           </li>
         </ul>
-        <ColorModePicker class="hidden sm:block" />
         <Menu class="block sm:hidden" />
       </div>
     </div>
