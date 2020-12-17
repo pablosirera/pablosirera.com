@@ -21,9 +21,7 @@
     <div v-if="shouldShowVideo" class="lightbox" @click="hideVideo()">
       <div class="lightbox-container">
         <div class="lightbox-content">
-          <button class="lightbox-close" @click="hideVideo()">
-            Close | ✕
-          </button>
+          <button class="lightbox-close" @click="hideVideo()">Close | ✕</button>
           <div class="video-container">
             <iframe
               id="youtube"

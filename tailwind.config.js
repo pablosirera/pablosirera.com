@@ -13,7 +13,7 @@ module.exports = {
           600: '#9bd681',
           700: '#81a78f',
           '700-40': '#81a78f47',
-          '800': '#435d4c',
+          800: '#435d4c',
         },
         'gray-main': {
           50: '#ebf4f1',
@@ -58,4 +58,8 @@ module.exports = {
       'nuxt.config.js',
     ],
   },
+  experimental: {
+    darkModeVariant: true,
+  },
+  dark: 'class',
 }

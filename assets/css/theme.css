@@ -1,4 +1,5 @@
-.dark-mode {
+/* TODO: refactorizar estas variables y usar el dark de tailwindcss */
+.dark {
   --color: theme('colors.gray-main.400');
 
   /* --color: theme('colors.gray-main.50'); */
