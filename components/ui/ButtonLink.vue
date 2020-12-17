@@ -1,13 +1,18 @@
 <template>
-  <button :class="buttonClasses" @click="$emit('click')">
+  <router-link :class="buttonClasses" :to="path">
     <slot />
-  </button>
+  </router-link>
 </template>
 
 <script>
+// TODO: sacar a un mixin lo común entre este componente y BaseButton
 export default {
-  name: 'BaseButton',
+  name: 'ButtonLink',
   props: {
+    path: {
+      type: String,
+      required: true,
+    },
     type: {
       type: String,
       default: 'normal',
@@ -33,7 +38,7 @@ export default {
 }
 
 .medium {
-  @apply px-4 py-2 rounded-lg text-base font-bold;
+  @apply px-4 py-2 rounded-lg text-base font-bold mx-2;
 }
 
 .medium:hover {

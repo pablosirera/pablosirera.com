@@ -15,7 +15,7 @@
               {{ link.name }}
             </nuxt-link>
           </li>
-          <BaseButton type="outlined">Contáctame</BaseButton>
+          <ButtonLink type="outlined" path="/contact-me">Contáctame</ButtonLink>
         </ul>
         <Menu class="block sm:hidden" />
       </div>
@@ -25,14 +25,14 @@
 
 <script>
 import { NAV_LINKS } from '@/constants/navLinks'
-import BaseButton from '~/components/ui/BaseButton.vue'
+import ButtonLink from '~/components/ui/ButtonLink.vue'
 import Logo from '~/components/Logo'
 
 export default {
   name: 'TheHeader',
   components: {
     Logo,
-    BaseButton,
+    ButtonLink,
   },
   computed: {
     links() {
