@@ -90,7 +90,7 @@ export default {
   @apply rounded flex justify-center;
 
   .image {
-    @apply rounded;
+    @apply rounded w-full h-full;
   }
 }
 
