@@ -4,14 +4,15 @@
     <p>
       ¡Hola 👋! soy <b>Pablo Sirera</b>, desarrollador web viviendo en Valencia.
     </p>
+    <br />
     <p>
       Personalmente me considero una persona que no le gusta estarse quieta,
       intento estar siempre actualizado (no es tarea fácil 😅). Cómo me gusta
       tanto estar actualizado y seguir formándome decidí intentar formar yo con
       los conocimientos que tengo actualmente e intento actualizar día a día.
     </p>
+    <br />
     <p>
-      <!-- TODO: add link to blog -->
       De vez en cuando escribo artículos en mi
       <TheLink :is-local-route="true" url="/blog">blog</TheLink>, hago directos
       en
@@ -21,10 +22,12 @@
         Youtube </TheLink
       >.
     </p>
+    <br />
     <p>
       Considero que es muy importante que compartamos el conocimiento adquirido
       para que no quede en el olvido y así podamos ayudar 🤝 a los demás.
     </p>
+    <br />
     <p>
       En mi cuenta personal de
       <TheLink url="https://github.com/pablosirera">GitHub</TheLink>
