@@ -28,24 +28,15 @@ export default {
 <style lang="scss" scoped>
 // TODO: integrate tailwind
 .coffee-button {
-  line-height: 35px;
-  height: 51px;
-  min-width: 217px;
+  // line-height: 35px;
   text-decoration: none;
-  display: inline-flex;
+  display: flex;
+  align-items: center;
   color: #fff;
   background-color: theme('colors.primary');
   border-radius: 5px;
   border: 1px solid transparent;
-  padding: 7px 10px 7px 10px;
-  font-size: 28px;
-  letter-spacing: 0.6px;
-  box-shadow: 0 1px 2px rgba(190, 190, 190, 0.5);
-  -webkit-box-shadow: 0 1px 2px 2px rgba(190, 190, 190, 0.5);
-  margin: 0 auto;
-  font-family: 'Cookie', cursive;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  padding: 7px 10px;
   -o-transition: 0.3s all linear;
   -webkit-transition: 0.3s all linear;
   -moz-transition: 0.3s all linear;
@@ -64,9 +55,6 @@ export default {
   &:hover,
   &:active,
   &:focus {
-    -webkit-box-shadow: 0 1px 2px 2px rgba(190, 190, 190, 0.5);
-    text-decoration: none;
-    box-shadow: 0 1px 2px 2px rgba(190, 190, 190, 0.5);
     opacity: 0.85;
     color: #fff;
   }
@@ -74,6 +62,6 @@ export default {
 
 .coffee-text {
   margin-left: 15px;
-  font-size: 28px;
+  font-size: 24px;
 }
 </style>

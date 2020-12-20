@@ -8,18 +8,19 @@
         </h1>
         <div class="h-2 w-24 bg-primary my-3 rounded" />
         <p>
-          Soy Senior Frontend Developer actualmente enfocado al mundo del
-          desarrollo web con Vue, Nuxt, JavaScript y Jest, entre otros.
+          Soy Senior Frontend Developer 👨🏼‍💻 actualmente enfocado al mundo del
+          desarrollo web con Vue, Nuxt, JavaScript y Jest, entre otros 💚.
         </p>
         <br />
         <p>
-          Mi actual objetivo es que podáis aprender fácil y mejorar día a día en
-          el desarrollo frontend.
+          Mi actual objetivo es que podáis aprender fácil 🤓 y mejorar día a día
+          📈 en el desarrollo frontend a través de mis videos, directos y
+          artículos.
         </p>
         <br />
         <p>
-          Si queréis saber más sobre mí o mi trabajo, podéis visitar el blog, mi
-          página o seguirme por las redes sociales que dejo aquí bajo 👇👇
+          Si queréis saber más sobre mí, puedes hacer un tour por esta web o
+          seguirme por las redes sociales que dejo aquí bajo 👇👇
         </p>
         <div class="flex justify-center my-4">
           <nuxt-link to="/blog" class="blog-button hover:opacity-75">
@@ -49,6 +50,12 @@
     <section class="mt-12 md:grid md:grid-cols-2 md:gap-4">
       <YoutubeVideos :videos="videos" />
       <ListPosts :posts="posts" />
+    </section>
+    <section class="mt-12">
+      Si te gusta mi contenido y quieres apoyarme 💪 puedes invitarme a un ☕️ o
+      subscribirte gratis con Amazon Prime en mi canal de
+      <TheLink url="https://twitch.tv/pablosirera">Twitch</TheLink>
+      <CoffeeWidget />
     </section>
   </section>
 </template>
