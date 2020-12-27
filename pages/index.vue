@@ -51,10 +51,10 @@
       <YoutubeVideos :videos="videos" />
       <ListPosts :posts="posts" />
     </section>
-    <section class="mt-12">
+    <section class="mt-12 text-center">
       Si te gusta mi contenido y quieres apoyarme 💪 puedes invitarme a un ☕️ o
       subscribirte gratis con Amazon Prime en mi canal de
-      <TheLink url="https://twitch.tv/pablosirera">Twitch</TheLink>
+      <TheLink url="https://twitch.tv/pablosirera">Twitch</TheLink>.
       <CoffeeWidget />
     </section>
   </section>
