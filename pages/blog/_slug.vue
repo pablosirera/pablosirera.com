@@ -1,6 +1,9 @@
 <template>
   <section class="md:flex">
-    <aside v-if="doc.toc.length" class="sidebar border rounded-md">
+    <aside
+      v-if="doc.toc.length"
+      class="sidebar border rounded-md hidden md:block"
+    >
       <ContentTable :content="doc.toc" />
     </aside>
     <article class="mb-20">
