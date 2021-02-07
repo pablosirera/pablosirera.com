@@ -41,11 +41,11 @@ export default {
   -o-transition: opacity 0.2s ease-out, border-bottom-color 0.2s ease-out;
   transition: opacity 0.2s ease-out, border-bottom-color 0.2s ease-out;
 
-  @apply text-blue-main-300 font-bold;
+  @apply text-primary font-bold;
 
   &:hover {
     opacity: 0.8;
-    border-bottom: solid 1px #1f8ed5;
+    border-bottom: solid 1px theme('colors.primary');
   }
 }
 </style>

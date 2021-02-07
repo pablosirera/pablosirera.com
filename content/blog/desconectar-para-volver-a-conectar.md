@@ -3,7 +3,7 @@ title: 'Desconectar para volver a conectar'
 description: 'Breve reflexión sobre la importancia de desconectar para posteriormente volver a conectar.'
 date: 2020-06-21
 timeToRead: 4
-image: disconnect.jpg
+image: v1597688488/disconnect.jpg
 tags:
   - personal
 ---

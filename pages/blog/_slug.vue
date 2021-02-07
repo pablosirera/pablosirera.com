@@ -2,7 +2,7 @@
   <section class="md:flex">
     <aside
       v-if="doc.toc.length"
-      class="sidebar border rounded-md hidden md:block"
+      class="sidebar border rounded-md hidden lg:block"
     >
       <ContentTable :content="doc.toc" />
     </aside>

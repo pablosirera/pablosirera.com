@@ -13,32 +13,55 @@ article > .nuxt-content {
   margin-left: 1rem;
 }
 
-.nuxt-content .vue {
-  background-color: theme('colors.green-main.400');
-  color: white;
-  padding: 0 3px;
-}
-
 .nuxt-content .code {
-  background-color: theme('colors.blue-main.750');
+  background-color: theme('colors.yellow-main.300');
   color: theme('colors.gray-main.950');
   padding: 0 3px;
+  border-radius: 5px;
 }
 
-.dark-mode .nuxt-content .code {
-  background-color: theme('colors.blue-main.400');
+.nuxt-content p > code {
+  background-color: theme('colors.yellow-main.300');
+  color: theme('colors.gray-main.950');
+  padding: 0 3px;
+  border-radius: 5px;
+}
+
+.nuxt-content blockquote {
+  border-left: 4px solid theme('colors.gray-main.400');
+  padding: 8px 12px;
+  margin: 10px 0;
+}
+
+.muxt-content .nuxt-content-highlight {
+  position: relative;
 }
 
 .nuxt-content .nuxt-content-highlight pre {
   border-radius: 5px;
   font-size: 0.875rem;
-  margin: 1.5rem 0 2rem;
+  margin: 2rem auto;
   box-shadow: rgba(0, 0, 0, 0.15) 0 32px 32px 0,
     rgba(0, 0, 0, 0.15) 0 16px 16px 0, rgba(0, 0, 0, 0.15) 0 8px 8px 0,
     rgba(0, 0, 0, 0.15) 0 4px 4px 0;
+  overflow: auto;
 }
 
 .nuxt-content .yt-video {
   margin: 20px auto;
   max-width: 450px;
+}
+
+.nuxt-content a {
+  text-decoration: none;
+  opacity: 1;
+  border-bottom: solid 1px transparent;
+  transition: opacity 0.2s ease-out, border-bottom-color 0.2s ease-out;
+  color: theme('colors.primary');
+  font-weight: bold;
+}
+
+.nuxt-content a:hover {
+  opacity: 0.8;
+  border-bottom: 1px solid theme('colors.primary');
 }
