@@ -27,13 +27,16 @@
       </div>
       <div class="divider" />
       <nuxt-content :document="doc" />
-      <CoffeeWidget />
+      <FooterBlog :article-name="doc.slug" />
     </article>
   </section>
 </template>
 
 <script>
+import FooterBlog from '~/components/blog/FooterBlog.vue'
+
 export default {
+  components: { FooterBlog },
   async asyncData({ $content, params }) {
     const doc = await $content(`blog/${params.slug}`).fetch()
     return { doc }

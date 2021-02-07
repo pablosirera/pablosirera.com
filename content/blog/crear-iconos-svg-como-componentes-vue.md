@@ -177,6 +177,6 @@ export default {
 </script>
 ```
 
-### Conclusiones
+### Conclusión
 
 Como habéis podido observar, hemos creado un sistema de gestión de iconos en muy pocos pasos y de forma muy sencilla. Espero que os haya gustado y cualquier feedback constructivo será bienvenido, podéis encontrarme por [twitter](https://twitter.com/pablosirera)
