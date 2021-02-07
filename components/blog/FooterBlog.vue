@@ -11,22 +11,20 @@
         <IconTwitter class="w-8 h-8" />
       </a>
 
-      <a href="https://www.buymeacoffee.com/pablosirera" target="_blank">
-        <img
-          src="https://img.buymeacoffee.com/button-api/?text=Invítame a un café&emoji=&slug=pablosirera&button_colour=81a78f&font_colour=000000&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00"
-        />
-      </a>
+      <CoffeeWidget />
     </div>
   </div>
 </template>
 
 <script>
 import IconTwitter from '~/components/icons/IconTwitter.vue'
+import CoffeeWidget from '~/components/ui/CoffeeWidget.vue'
 
 export default {
   name: 'FooterBlog',
   components: {
     IconTwitter,
+    CoffeeWidget,
   },
   props: {
     articleName: {
