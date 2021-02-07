@@ -3,7 +3,7 @@ title: 'El mejor setup como desarrollador web'
 description: 'Espacio de trabajo o setup de un desarrollador web en casa. Repaso sobre todo lo que contiene mi zona de trabajo y explicación de porque lo uso.'
 date: 2020-08-17
 timeToRead: 6
-image: setup-desarrollador-web.jpg
+image: v1597688488/setup-desarrollador-web.jpg
 tags:
   - personal
 ---

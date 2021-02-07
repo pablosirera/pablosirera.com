@@ -1,5 +1,5 @@
 <template>
-  <header class="py-5">
+  <header class="py-5 px-3">
     <div class="container flex justify-between items-center">
       <nuxt-link to="/" class="flex items-center">
         <Logo />
@@ -24,7 +24,7 @@
 <script>
 import { NAV_LINKS } from '@/constants/navLinks'
 import ButtonLink from '~/components/ui/ButtonLink.vue'
-import Logo from '~/components/Logo'
+import Logo from '~/components/Logo.vue'
 
 export default {
   name: 'TheHeader',
