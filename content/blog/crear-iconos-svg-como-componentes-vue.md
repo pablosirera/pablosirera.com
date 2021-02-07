@@ -69,7 +69,7 @@ export default {
 
 ### Crear IconBase
 
-En este paso vamos a crear el componente de icono base con un **slot** para que puedan usarlo todos los iconos que vayamos creando.
+En este paso vamos a crear el componente de icono base con un **slot** para que pueda usarse en todos los iconos que vayamos creando.
 
 Este componente tendrá la base de un svg y mediante props lo adaptaremos a nuestras necesidades.
 
@@ -119,11 +119,11 @@ export default {
 </script>
 ```
 
-Como vemos en el ejemplo, el componente está adaptado para que sea dinámico gracias a las props y tenga unos mínimos de accesibilidad ya que la prop `iconName` se aplicará al title y a su id.
+Como vemos en el ejemplo, el componente está adaptado para que sea dinámico gracias a las props y para que tenga unos mínimos de accesibilidad, ya que la prop `iconName` se aplicará al title y a su id.
 
 ### Crear Mixin
 
-El siguiente paso sería crear un mixin de vue, el cual será usado por todos los componentes de iconos para no tener que repetir el mismo código. Este mixin contiene en este caso todas las props comunes y la importación del IconBase.
+El siguiente paso sería crear un mixin de vue, que será usado por todos los componentes de iconos para no tener que repetir el mismo código. El mixin contiene en este caso todas las props comunes y la importación del IconBase.
 
 ```vue
 <script>
@@ -150,7 +150,7 @@ export default {
 </script>
 ```
 
-Tal y como podemos observar en el código, cada icono tendrá por defecto un tamaño que podrá cambiarse y el color del icono que por defecto será `currentColor`.
+Tal y como podemos observar en el código, cada icono tiene por defecto un tamaño que puede cambiarse y el color del icono que por defecto es `currentColor`.
 
 > `currentColor` significa que heredá el color que se le aplique al texto que lo envuelve.
 
@@ -179,4 +179,4 @@ export default {
 
 ### Conclusiones
 
-Como habéis podido observar, hemos creado un sistema de gestión de iconos en muy pocos pasos y de forma muy sencilla. Espero que te haya gustado y cualquier feedback contructivo será bienvenido, puedes encontrarme por [twitter](https://twitter.com/pablosirera)
+Como habéis podido observar, hemos creado un sistema de gestión de iconos en muy pocos pasos y de forma muy sencilla. Espero que os haya gustado y cualquier feedback constructivo será bienvenido, podéis encontrarme por [twitter](https://twitter.com/pablosirera)
