@@ -55,7 +55,9 @@
       Si te gusta mi contenido y quieres apoyarme 💪 puedes invitarme a un ☕️ o
       subscribirte gratis con Amazon Prime en mi canal de
       <TheLink url="https://twitch.tv/pablosirera">Twitch</TheLink>.
-      <CoffeeWidget />
+      <div class="flex justify-center mt-4">
+        <CoffeeWidget />
+      </div>
     </section>
   </section>
 </template>
