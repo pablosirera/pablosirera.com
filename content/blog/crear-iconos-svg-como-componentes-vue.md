@@ -1,6 +1,6 @@
 ---
 title: 'Crear iconos SVG como componentes de Vue'
-description: 'A la hora de usar iconos svg en una aplicación Vue lo más habitual es gestionarlos como archivos independientes, pero si nos paramos a analizar el contenido de un archivo svg no deja de ser tags de html.'
+description: 'A la hora de usar svg icons en una aplicación Vue lo más habitual es gestionarlos como archivos independientes, pero si nos paramos a analizar el contenido de un archivo svg no deja de ser tags de html.'
 date: 2021-02-10
 timeToRead: 5
 image: icons-svg.jpg
