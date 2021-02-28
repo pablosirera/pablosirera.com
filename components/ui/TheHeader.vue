@@ -3,7 +3,7 @@
     <div class="container flex justify-between items-center">
       <nuxt-link to="/" class="flex items-center">
         <Logo />
-        <h1 class="secondary-title ml-4">Pablo Sirera</h1>
+        <span class="secondary-title ml-4">Pablo Sirera</span>
       </nuxt-link>
       <div class="flex items-center">
         <ul class="text-center hidden sm:flex sm:items-center">
@@ -13,6 +13,7 @@
               {{ link.name }}
             </nuxt-link>
           </li>
+          <!-- TODO: discomment when contact me works fine -->
           <ButtonLink type="outlined" path="/contact-me">Contáctame</ButtonLink>
         </ul>
         <Menu class="block sm:hidden" />
@@ -32,10 +33,10 @@ export default {
     Logo,
     ButtonLink,
   },
-  computed: {
-    links() {
-      return NAV_LINKS
-    },
+  data() {
+    return {
+      links: NAV_LINKS,
+    }
   },
 }
 </script>
