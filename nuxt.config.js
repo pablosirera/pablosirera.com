@@ -56,7 +56,11 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: ['~/plugins/global.js', '~/plugins/directives.js'],
+  plugins: [
+    '~/plugins/global.js',
+    '~/plugins/directives.js',
+    '~/plugins/metricool.js',
+  ],
   /*
    ** Nuxt.js dev-modules
    */
