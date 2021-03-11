@@ -26,11 +26,13 @@
 import { NAV_LINKS } from '@/constants/navLinks'
 // import ButtonLink from '~/components/ui/ButtonLink.vue'
 import Logo from '~/components/Logo.vue'
+import Menu from '~/components/ui/Menu.vue'
 
 export default {
   name: 'TheHeader',
   components: {
     Logo,
+    Menu,
     // ButtonLink,
   },
   data() {

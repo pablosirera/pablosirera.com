@@ -43,6 +43,7 @@
         <BaseButton type="submit">Enviar mensaje</BaseButton>
       </p>
     </form>
+    <BaseAlert v-if="showAlert" :theme="alertType" />
   </section>
 </template>
 
@@ -53,10 +54,13 @@ export default {
   name: 'ContactMe',
   components: {
     BaseButton,
+    BaseAlert: () => import('~/components/ui/BaseAlert.vue'),
   },
   data() {
     return {
       form: {},
+      showAlert: false,
+      alertType: '',
     }
   },
   methods: {
@@ -83,10 +87,18 @@ export default {
           }),
           axiosConfig
         )
-        console.log('tuto benne')
+        this.launchAlert('succcess')
+        this.form = {}
       } catch (error) {
-        console.log(error)
+        this.launchAlert('error')
       }
+    },
+    launchAlert(type) {
+      this.alertType = type
+      this.showAlert = true
+      setTimeout(() => {
+        this.showAlert = false
+      }, 3000)
     },
   },
 }
