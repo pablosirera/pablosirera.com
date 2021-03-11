@@ -8,7 +8,7 @@
 export default {
   name: 'BaseButton',
   props: {
-    type: {
+    theme: {
       type: String,
       default: 'normal',
       validate: (value) => ['normal', 'outlined'].includes(value),
@@ -18,10 +18,15 @@ export default {
       default: 'medium',
       validate: (value) => ['medium'].includes(value),
     },
+    type: {
+      type: String,
+      default: 'button',
+      validate: (value) => ['button', 'submit', 'reset'].includes(value),
+    },
   },
   computed: {
     buttonClasses() {
-      return [this.size, this.type]
+      return [this.size, this.theme]
     },
   },
 }
