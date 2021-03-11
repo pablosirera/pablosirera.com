@@ -74,7 +74,7 @@ export default {
 
       try {
         await this.$axios.$post(
-          '/',
+          'https://www.pablosirera.com/',
           this.encode({
             'form-name': 'contact',
             ...this.form,
