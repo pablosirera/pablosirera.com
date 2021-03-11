@@ -87,7 +87,7 @@ export default {
           }),
           axiosConfig
         )
-        this.launchAlert('succcess')
+        this.launchAlert('success')
         this.form = {}
       } catch (error) {
         this.launchAlert('error')
