@@ -87,6 +87,8 @@ export default {
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
     '@nuxtjs/pwa',
+    // Doc: https://axios.nuxtjs.org/
+    '@nuxtjs/axios',
     '@/modules/sitemapRouteGenerator',
   ],
   /*

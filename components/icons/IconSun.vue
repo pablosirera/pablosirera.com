@@ -20,13 +20,9 @@
 
 <script>
 import IconMixin from '@/mixins/IconMixin.vue'
-import IconBase from '@/components/ui/IconBase.vue'
 
 export default {
   name: 'IconSun',
-  components: {
-    IconBase,
-  },
   mixins: [IconMixin],
 }
 </script>

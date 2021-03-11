@@ -14,7 +14,7 @@
             </nuxt-link>
           </li>
           <!-- TODO: discomment when contact me works fine -->
-          <ButtonLink type="outlined" path="/contact-me">Contáctame</ButtonLink>
+          <!-- <ButtonLink type="outlined" path="/contact-me">Contáctame</ButtonLink> -->
         </ul>
         <Menu class="block sm:hidden" />
       </div>
@@ -24,14 +24,16 @@
 
 <script>
 import { NAV_LINKS } from '@/constants/navLinks'
-import ButtonLink from '~/components/ui/ButtonLink.vue'
+// import ButtonLink from '~/components/ui/ButtonLink.vue'
 import Logo from '~/components/Logo.vue'
+import Menu from '~/components/ui/Menu.vue'
 
 export default {
   name: 'TheHeader',
   components: {
     Logo,
-    ButtonLink,
+    Menu,
+    // ButtonLink,
   },
   data() {
     return {
