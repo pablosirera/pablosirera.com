@@ -61,22 +61,24 @@ export default {
   },
   methods: {
     encode(data) {
-      return Object.keys(data)
-        .map(
-          (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
-        )
-        .join('&')
+      const formData = new FormData()
+
+      for (const key of Object.keys(data)) {
+        formData.append(key, data[key])
+      }
+
+      return formData
     },
-    async handleSubmit() {
+    async handleSubmit(event) {
       const axiosConfig = {
         header: { 'Content-Type': 'application/x-www-form-urlencoded' },
       }
 
       try {
-        await this.$axios.$post(
-          'https://www.pablosirera.com/',
+        await this.$axios.post(
+          location.href,
           this.encode({
-            'form-name': 'contact',
+            'form-name': event.target.getAttribute('name'),
             ...this.form,
           }),
           axiosConfig
