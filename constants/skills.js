@@ -36,7 +36,7 @@ export const SKILLS = [
     component: SASSIcon,
   },
   {
-    name: 'Responsive Desing',
+    name: 'Responsive Design',
     component: ResponsiveIcon,
   },
   {
