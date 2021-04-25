@@ -1,12 +1,6 @@
 <template>
   <section class="md:flex">
-    <aside
-      v-if="doc.toc.length"
-      class="sidebar border rounded-md hidden lg:block"
-    >
-      <ContentTable :content="doc.toc" />
-    </aside>
-    <article class="mb-20">
+    <article class="mb-20 w-full max-w-3xl mx-auto">
       <h1 class="text-4xl">{{ doc.title }}</h1>
       <p class="opacity-50">
         <span>🗓 {{ $d(new Date(doc.date), 'short') }}</span>
@@ -97,20 +91,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.sidebar {
-  @media (min-width: theme('screens.md')) {
-    flex: 0 0 200px;
-    width: 200px;
-    max-height: 80vh;
-    top: 60px;
-    margin-top: 10px;
-    margin-right: 30px;
-    height: fit-content;
-
-    @apply sticky overflow-y-auto;
-  }
-}
-
 .divider {
   @apply border-4 border-primary w-16 rounded mt-4 mb-8;
 }
