@@ -1,5 +1,5 @@
 <template>
-  <header class="py-5 px-3">
+  <header class="py-5 px-3 sticky top-0 header">
     <div class="container flex justify-between items-center">
       <nuxt-link to="/" class="flex items-center">
         <Logo />
@@ -44,6 +44,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.header {
+  background-color: var(--bg);
+  // TODO: cambiar este 64, aparece por el play de los videos en los artículos
+  z-index: 64;
+}
 .link {
   color: var(--nav-links-color);
 
