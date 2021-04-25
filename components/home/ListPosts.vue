@@ -12,7 +12,7 @@
       <img
         :src="`https://res.cloudinary.com/de5xzoviz/image/upload/q_68/${post.image}`"
         :alt="post.title"
-        class="rounded mr-3"
+        class="rounded mr-3 w-auto"
       />
       <h4 class="text-left">{{ post.title }}</h4>
     </nuxt-link>

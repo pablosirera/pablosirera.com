@@ -13,7 +13,7 @@
         :src="`https://i3.ytimg.com/vi/${video.shortId}/mqdefault.jpg`"
         :alt="video.title"
         loading="lazy"
-        class="w-40 h-24 rounded"
+        class="w-auto h-24 rounded"
       />
       <h4 class="pl-3">{{ video.title }}</h4>
     </a>
