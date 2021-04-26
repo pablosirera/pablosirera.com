@@ -5,7 +5,7 @@
       <a
         target="_blank"
         :href="`https://twitter.com/intent/tweet?&text=He leído tu artículo 🤩&url=https://pablosirera.com/blog/${articleName}&screen_name=pablosirera`"
-        class="twitter-button"
+        class="twitter-button mb-4"
       >
         Comparte el artículo
         <IconTwitter class="w-8 h-8" />
