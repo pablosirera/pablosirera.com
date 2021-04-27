@@ -33,6 +33,10 @@ export default {
     items() {
       return [
         {
+          name: 'Únete al servidor de discord ✌️',
+          link: 'https://discord.gg/62NK7pNP',
+        },
+        {
           name: '👨🏼‍💻 Pásate por mi nuevo sitio web',
           link: '/',
         },
