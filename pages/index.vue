@@ -41,7 +41,7 @@
       <div class="image-wrapper">
         <img
           class="image"
-          src="https://res.cloudinary.com/de5xzoviz/image/upload/v1597688488/setup-desarrollador-web.jpg"
+          src="https://res.cloudinary.com/de5xzoviz/image/upload/q_60/v1597688488/setup-desarrollador-web.jpg"
           alt="setup desarrollador web valencia"
           loading="lazy"
         />
