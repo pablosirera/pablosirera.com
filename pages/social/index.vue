@@ -34,7 +34,7 @@ export default {
       return [
         {
           name: 'Únete al servidor de discord ✌️',
-          link: 'https://discord.gg/62NK7pNP',
+          link: 'https://discord.gg/DsvmWs8Ban',
           isExternal: true,
         },
         {
