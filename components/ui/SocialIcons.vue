@@ -16,6 +16,7 @@
 <script>
 export default {
   name: 'SocialIcons',
+  // TODO: move this icons to icons vue folder
   components: {
     SocialTwitter: () => import('@/assets/icons/twitter.svg?inline'),
     SocialInstagram: () => import('@/assets/icons/instagram.svg?inline'),
@@ -23,6 +24,7 @@ export default {
     SocialYoutube: () => import('@/assets/icons/youtube.svg?inline'),
     SocialLinkedin: () => import('@/assets/icons/linkedin.svg?inline'),
     SocialGithub: () => import('@/assets/icons/github.svg?inline'),
+    SocialDiscord: () => import('@/assets/icons/discord.svg?inline'),
   },
   data: () => ({
     // TODO: translate this texts and add alt
@@ -57,6 +59,11 @@ export default {
         name: 'github',
         ariaLabel: 'Sígueme en github',
       },
+      {
+        href: 'https://discord.gg/zUny9UK7',
+        name: 'discord',
+        ariaLabel: 'Vente a hablar por discord',
+      },
     ],
   }),
 }
@@ -65,6 +72,7 @@ export default {
 <style lang="scss" scoped>
 .social-icon {
   color: var(--icons-color);
+  fill: var(--icons-color);
 
   @apply w-6 h-6;
 }
