@@ -1,7 +1,8 @@
 <template>
   <transition name="fade">
     <div
-      class="border-t-4 rounded-b px-4 py-3 shadow-md fixed top-0"
+      v-if="localShow"
+      class="border-t-4 rounded-b px-4 py-3 shadow-md fixed top-0 base-alert"
       :class="theme"
       role="alert"
     >
@@ -36,8 +37,17 @@ export default {
     theme: {
       type: String,
       default: 'success',
-      validate: (value) => ['success', 'error'].validate(value),
+      validate: (value) => ['success', 'error'].includes(value),
     },
+    show: {
+      type: Boolean,
+      default: false,
+    },
+  },
+  data() {
+    return {
+      localShow: false,
+    }
   },
   computed: {
     isSuccess() {
@@ -45,6 +55,11 @@ export default {
     },
     isError() {
       return this.theme === 'error'
+    },
+  },
+  watch: {
+    show(newValue) {
+      this.localShow = newValue
     },
   },
 }
@@ -57,5 +72,10 @@ export default {
 
 .error {
   @apply border-red-700 bg-red-300;
+}
+
+.base-alert {
+  // TODO: cambiar este 65, aparece porque el header tiene 64 por el play de los videos en los artículos
+  z-index: 65;
 }
 </style>
