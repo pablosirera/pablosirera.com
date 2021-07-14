@@ -1,9 +1,9 @@
 <template>
   <div class="min-h-screen">
-    <TheHeader />
+    <BaseHeader />
     <main class="pt-4 container px-3">
       <nuxt />
     </main>
-    <TheFooter />
+    <BaseFooter />
   </div>
 </template>
