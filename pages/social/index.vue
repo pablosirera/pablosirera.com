@@ -14,20 +14,39 @@
         {{ item.name }}
       </a>
     </section>
+    <section>
+      <nuxt-link :to="post.path" tag="div" class="social-post">
+        <img
+          class="w-64 rounded-t"
+          :src="`${imageUrl}${post.image}`"
+          :alt="post.title"
+        />
+        <p class="bg-primary relative px-3 py-2 w-64 my-0 mx-auto rounded-b">
+          {{ post.title }}
+        </p>
+      </nuxt-link>
+    </section>
   </div>
 </template>
 
 <script>
+import { COMMON_POST_IMAGE_URL } from '~/constants/images'
+
 export default {
   layout: 'social',
   async asyncData({ $content }) {
     const post = await $content('blog')
-      .only(['title', 'path'])
+      .only(['title', 'path', 'image'])
       .sortBy('date', 'desc')
       .limit(1)
       .fetch()
 
-    return { post }
+    return { post: post[0] }
+  },
+  data() {
+    return {
+      imageUrl: COMMON_POST_IMAGE_URL,
+    }
   },
   computed: {
     items() {
@@ -45,10 +64,6 @@ export default {
           name: 'Subscríbete a mi canal de Youtube 📹',
           link: 'https://www.youtube.com/user/psirera4?sub_confirmation=1',
           isExternal: true,
-        },
-        {
-          name: `Último artículo✏️: ${this.post[0].title}`,
-          link: this.post[0].path,
         },
         {
           name: '🎙 Pásate por mis directos en twitch',
