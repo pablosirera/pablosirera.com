@@ -14,16 +14,22 @@
         {{ item.name }}
       </a>
     </section>
-    <section>
-      <nuxt-link :to="post.path" tag="div" class="social-post">
+    <section class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <nuxt-link :to="post.path" tag="div" class="flex flex-col items-center">
         <img
           class="w-64 rounded-t"
           :src="`${imageUrl}${post.image}`"
           :alt="post.title"
         />
-        <p class="bg-primary relative px-3 py-2 w-64 my-0 mx-auto rounded-b">
+        <p class="bg-primary relative px-3 py-2 w-64 rounded-b">
           {{ post.title }}
         </p>
+      </nuxt-link>
+      <nuxt-link to="" tag="div">
+        <youtube-embed-lite
+          class="yt-video"
+          :vid="videoId"
+        ></youtube-embed-lite>
       </nuxt-link>
     </section>
   </div>
@@ -41,7 +47,13 @@ export default {
       .limit(1)
       .fetch()
 
-    return { post: post[0] }
+    const videosResponse = await fetch(
+      `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=UUl41m8HBifhzM6Dh1V04wqA&maxResults=1&key=${process.env.YOUTUBE_API_KEY}`
+    )
+    const jsonVideos = await videosResponse.json()
+    const videos = jsonVideos.items
+
+    return { post: post[0], video: videos[0] }
   },
   data() {
     return {
@@ -49,6 +61,9 @@ export default {
     }
   },
   computed: {
+    videoId() {
+      return this.video.snippet.resourceId.videoId
+    },
     items() {
       return [
         {
@@ -99,3 +114,10 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.yt-video {
+  // TODO: tailwind tiene la clase w-80 pero no funciona (quizás por la versión)
+  width: 20rem;
+}
+</style>
