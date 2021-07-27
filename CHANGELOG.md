@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/pablosirera/pablosirera.com/compare/v1.0.0...v1.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **projects:** update stars and forks ([adaf1e4](https://github.com/pablosirera/pablosirera.com/commit/adaf1e4dde4356b67e58e6329cb73e16df3b6acc))
+
 ## 1.0.0 (2021-07-27)
 
 
