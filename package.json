@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^5.13.1",
+    "@heroicons/vue": "^1.0.3",
     "@miyaoka/vue-youtube-embed-lite": "^1.1.0",
     "@nuxt/components": "^1.0.6",
     "@nuxt/content": "^1.11.1",
