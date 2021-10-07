@@ -13,4 +13,5 @@
   --tag-bg: var(--bg);
   --tag-bg-hover: var(--bg);
   --blog-card-shadow: var(--bg);
+  --bg-card: theme('colors.gray-main.750');
 }

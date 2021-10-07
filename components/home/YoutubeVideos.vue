@@ -1,50 +1,56 @@
 <template>
   <div>
-    <h2 class="text-3xl font-semibold text-center pb-3">
+    <h2 v-if="hasTitle" class="text-3xl font-semibold text-center pb-3">
       {{ $t('home.lastVideos') }}
     </h2>
     <a
       v-for="(video, index) in allVideos"
       :key="index"
-      class="flex justify-start mb-4 cursor-pointer p-2 rounded hover:bg-green-main-700-40"
+      :class="videoItemClasses"
+      class="video-item mb-4 cursor-pointer p-2 rounded hover:bg-green-main-700-40"
       @click="showVideo(video.shortId)"
     >
       <img
-        :src="`https://i3.ytimg.com/vi/${video.shortId}/mqdefault.jpg`"
+        :src="video.img"
         :alt="video.title"
         loading="lazy"
-        class="w-auto h-24 rounded"
+        class="w-auto rounded video-img"
+        :class="imgSize"
       />
-      <h4 class="pl-3">{{ video.title }}</h4>
+      <h4>{{ video.title }}</h4>
     </a>
 
-    <div v-if="shouldShowVideo" class="lightbox" @click="hideVideo()">
-      <div class="lightbox-container">
-        <div class="lightbox-content">
-          <button class="lightbox-close" @click="hideVideo()">Close | ✕</button>
-          <div class="video-container">
-            <iframe
-              id="youtube"
-              width="960"
-              height="540"
-              :src="`https://www.youtube.com/embed/${videoId}?showinfo=0`"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
+    <LightboxVideo
+      v-if="shouldShowVideo"
+      :video-id="videoId"
+      @hide-video="hideVideo()"
+    />
   </div>
 </template>
 
 <script>
 export default {
   name: 'YoutubeVideos',
+  components: {
+    LightboxVideo: () => import('~/components/ui/LightboxVideo.vue'),
+  },
   props: {
     videos: {
       type: Array,
       default: () => [],
+    },
+    hasTitle: {
+      type: Boolean,
+      default: true,
+    },
+    imgSize: {
+      type: String,
+      default: 'small',
+      validator: (value) => ['small', 'big'].includes(value),
+    },
+    isResponsive: {
+      type: Boolean,
+      default: false,
     },
   },
   data: () => ({
@@ -53,13 +59,21 @@ export default {
   }),
   computed: {
     allVideos() {
-      return this.videos.map((video) => {
-        return {
-          title: video.snippet.title,
-          id: video.id,
-          shortId: video.snippet.resourceId.videoId,
-        }
-      })
+      return this.videos
+        .map((video) => {
+          if (Object.keys(video.snippet.thumbnails).length) {
+            return {
+              title: video.snippet.title,
+              id: video.id,
+              shortId: video.snippet.resourceId.videoId,
+              img: video.snippet.thumbnails.maxres.url,
+            }
+          }
+        })
+        .filter(Boolean)
+    },
+    videoItemClasses() {
+      return this.isResponsive ? 'video-item-responsive' : ''
     },
   },
   methods: {
@@ -75,44 +89,30 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.lightbox {
-  background-color: rgba(0, 0, 0, 0.8);
-  @apply z-10 bottom-0 right-0 left-0 top-0 fixed overflow-scroll;
+.video-img {
+  object-fit: cover;
+  &.small {
+    @apply h-24;
+  }
+  &.big {
+    @apply h-48;
+  }
+}
+.video-item {
+  @apply flex justify-start;
 
-  &-container {
-    max-width: 960px;
-    margin: 185px auto;
-    padding: 0 3%;
+  h4 {
+    @apply pl-3;
+  }
 
-    @apply z-20 block h-auto relative;
+  &-responsive {
+    @media (max-width: theme('screens.sm')) {
+      @apply flex-col;
 
-    @media screen and (max-width: 768px) {
-      margin-top: 50%;
+      h4 {
+        @apply pl-0 pt-3;
+      }
     }
   }
-
-  &-content {
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
-  }
-
-  &-close {
-    top: -22px;
-    right: 3%;
-
-    @apply block text-white border-none uppercase bg-transparent absolute font-light text-xs;
-  }
-}
-
-.video-container {
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-
-  @apply relative overflow-hidden h-0;
-}
-
-.video-container iframe,
-.video-container object,
-.video-container embed {
-  @apply absolute h-full w-full left-0 top-0;
 }
 </style>

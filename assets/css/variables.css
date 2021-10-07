@@ -12,4 +12,5 @@
   --tag-bg: theme('colors.white');
   --tag-bg-hover: theme('colors.gray-main.100');
   --blog-card-shadow: #dadada80;
+  --bg-card: theme('colors.white');
 }

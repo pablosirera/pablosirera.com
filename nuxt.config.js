@@ -89,6 +89,13 @@ export default {
     // Doc: https://axios.nuxtjs.org/
     '@nuxtjs/axios',
     '@/modules/sitemapRouteGenerator',
+    // Doc: https://www.npmjs.com/package/nuxt-youtube-subscribe-module
+    [
+      'nuxt-youtube-subscribe-module',
+      {
+        tag: 'YoutubeSubscribeButton',
+      },
+    ],
   ],
   /*
    ** Content module configuration
