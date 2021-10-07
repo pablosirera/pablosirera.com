@@ -8,6 +8,10 @@ export const NAV_LINKS = [
     name: 'Proyectos',
   },
   {
+    url: '/courses',
+    name: 'Cursos',
+  },
+  {
     url: '/about',
     name: 'Sobre mí',
   },
