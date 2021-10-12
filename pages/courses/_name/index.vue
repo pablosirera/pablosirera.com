@@ -18,7 +18,7 @@
     <p class="flex justify-center mb-10">
       <YoutubeSubscribeButton
         identifier="my-subscribe-button"
-        channelid="UCl41m8HBifhzM6Dh1V04wqA"
+        :channelid="channelId"
         layout="full"
         theme="dark"
       />
@@ -41,7 +41,7 @@
 </template>
 
 <script>
-import { COURSES } from '~/constants/courses'
+import { CHANNEL_ID, COURSES } from '~/constants/courses'
 
 export default {
   name: 'CourseDetail',
@@ -55,6 +55,11 @@ export default {
 
     return {
       videos,
+    }
+  },
+  data() {
+    return {
+      channelId: CHANNEL_ID,
     }
   },
   computed: {

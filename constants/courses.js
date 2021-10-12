@@ -30,3 +30,5 @@ export const COURSES = {
       'Breve curso creando una aplicación de recetas con Vue.js 3 + Composition API y usando como base de datos Notion API.',
   },
 }
+
+export const CHANNEL_ID = 'UCl41m8HBifhzM6Dh1V04wqA'
