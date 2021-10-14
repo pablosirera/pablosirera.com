@@ -1,10 +1,10 @@
 {
   "name": "pablosirera.com",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "private": false,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build && nuxt export",
+    "build": "nuxt build && nuxt generate",
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
@@ -22,7 +22,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run build"
     }
   },
   "dependencies": {
@@ -37,6 +38,7 @@
     "@nuxtjs/sitemap": "^2.4.0",
     "nuxt": "^2.14.12",
     "nuxt-i18n": "^6.12.2",
+    "nuxt-youtube-subscribe-module": "^0.1.1",
     "timeline-vuejs": "^1.1.6",
     "v-click-outside": "^3.0.1"
   },

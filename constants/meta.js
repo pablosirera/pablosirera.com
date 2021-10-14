@@ -74,18 +74,18 @@ module.exports = [
     hid: 'og:image',
     property: 'og:image',
     content:
-      'https://res.cloudinary.com/de5xzoviz/image/upload/v1592684920/pablosirera.jpg',
+      'https://res.cloudinary.com/de5xzoviz/image/upload/v1634070254/pablo-sirera-desarrollador-web.jpg',
   },
   {
     hid: 'og:image:secure_url',
     property: 'og:image',
     content:
-      'https://res.cloudinary.com/de5xzoviz/image/upload/v1592684920/pablosirera.jpg',
+      'https://res.cloudinary.com/de5xzoviz/image/upload/v1634070254/pablo-sirera-desarrollador-web.jpg',
   },
   {
     hid: 'og:image:alt',
     property: 'og:image:alt',
-    content: 'Pablo Sirera | Desarrollador Web en Valencia',
+    content: 'Pablo Sirera | Desarrollador Web',
   },
   {
     hid: 'og:image:type',
