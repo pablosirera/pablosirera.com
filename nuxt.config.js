@@ -1,3 +1,4 @@
+import { COURSES } from './constants/courses.js'
 import META_INFO from './constants/meta.js'
 
 export default {
@@ -41,9 +42,13 @@ export default {
     async routes() {
       const { $content } = require('@nuxt/content')
       const dynamicRoutes = await $content('blog').only(['slug']).fetch()
-      return dynamicRoutes.map((myRoute) =>
+      const contentRoutes = dynamicRoutes.map((myRoute) =>
         myRoute.slug === '/index' ? '/' : `/blog/${myRoute.slug}`
       )
+      const coursesRoutes = Object.keys(COURSES).map(
+        (key) => COURSES[key].route
+      )
+      return [contentRoutes, coursesRoutes].flat()
     },
   },
   /*
