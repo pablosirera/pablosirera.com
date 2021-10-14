@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/pablosirera/pablosirera.com/compare/v1.0.1...v1.1.0) (2021-10-14)
+
+
+### Features
+
+* add courses dynamic routes to generate ([1f780ac](https://github.com/pablosirera/pablosirera.com/commit/1f780ace0a23283d356c6c48196f7b2e4c4b400c))
+* add youtube channel id to constants ([e464e49](https://github.com/pablosirera/pablosirera.com/commit/e464e496813ec1fb7f2f34362f71628e5833248d))
+* **courses:** add meta info ([59b5ca7](https://github.com/pablosirera/pablosirera.com/commit/59b5ca7d1c7bc1840e737f8c487442597d3c8dce))
+* **courses:** add meta info on each course detail page ([a32632b](https://github.com/pablosirera/pablosirera.com/commit/a32632b80627ef4467a8e98be43d38d3a32ef906))
+* **courses:** create page with all youtube courses ([#16](https://github.com/pablosirera/pablosirera.com/issues/16)) ([83a10bb](https://github.com/pablosirera/pablosirera.com/commit/83a10bbb0de25d84a39d477bdcc0e24500a0e717))
+
 ### [1.0.1](https://github.com/pablosirera/pablosirera.com/compare/v1.0.0...v1.0.1) (2021-07-27)
 
 
