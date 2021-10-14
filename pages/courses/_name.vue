@@ -75,6 +75,61 @@ export default {
     totalChapters() {
       return this.videos.length
     },
+    courseImage() {
+      return COURSES[this.$route.params.name].image
+    },
+  },
+  head() {
+    return {
+      title: this.courseTitle,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.courseDescription,
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: this.courseTitle,
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: this.courseDescription,
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: `https://pablosirera.com${this.$route.path}`,
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: this.courseTitle,
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.courseDescription,
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: this.courseImage,
+        },
+        {
+          hid: 'og:image:secure_url',
+          property: 'og:image',
+          content: this.courseImage,
+        },
+        {
+          hid: 'og:image:alt',
+          property: 'og:image:alt',
+          content: `${this.courseTitle} | Pablo Sirera - Desarrollador Web`,
+        },
+      ],
+    }
   },
 }
 </script>

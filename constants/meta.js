@@ -85,7 +85,7 @@ module.exports = [
   {
     hid: 'og:image:alt',
     property: 'og:image:alt',
-    content: 'Pablo Sirera | Desarrollador Web en Valencia',
+    content: 'Pablo Sirera | Desarrollador Web',
   },
   {
     hid: 'og:image:type',
