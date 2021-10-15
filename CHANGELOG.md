@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/pablosirera/pablosirera.com/compare/v1.1.0...v1.1.1) (2021-10-15)
+
+
+### Bug Fixes
+
+* **ui:** footer to bottom ([#20](https://github.com/pablosirera/pablosirera.com/issues/20)) ([8e30ab3](https://github.com/pablosirera/pablosirera.com/commit/8e30ab339e9f0318bcf9b665484ecab04695bcca))
+
 ## [1.1.0](https://github.com/pablosirera/pablosirera.com/compare/v1.0.1...v1.1.0) (2021-10-14)
 
 
