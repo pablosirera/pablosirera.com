@@ -7,6 +7,6 @@
 </template>
 <style scoped>
 .main-wrapper {
-  min-height: calc(100vh - 272px);
+  min-height: calc(100vh - var(--header-footer-height));
 }
 </style>

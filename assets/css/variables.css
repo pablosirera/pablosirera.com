@@ -13,4 +13,5 @@
   --tag-bg-hover: theme('colors.gray-main.100');
   --blog-card-shadow: #dadada80;
   --bg-card: theme('colors.white');
+  --header-footer-height: 272px; /* header&footer height to fix footer to bottom */
 }
