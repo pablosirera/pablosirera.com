@@ -60,7 +60,7 @@ export default {
         ariaLabel: 'Sígueme en github',
       },
       {
-        href: 'https://discord.gg/zUny9UK7',
+        href: 'https://discord.gg/DsvmWs8Ban',
         name: 'discord',
         ariaLabel: 'Vente a hablar por discord',
       },
