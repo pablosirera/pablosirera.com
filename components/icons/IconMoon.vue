@@ -55,8 +55,8 @@
         <circle cx="400" cy="271" fill="#d4cfd5" r="14.5" />
         <circle cx="163.5" cy="149.5" fill="#d4cfd5" r="7.33" />
         <circle cx="152.5" cy="351.5" fill="#c5bec6" r="7.33" />
-        <g fill="#d4cfd5"
-          ><circle cx="345.5" cy="399.5" r="7.33" />
+        <g fill="#d4cfd5">
+          <circle cx="345.5" cy="399.5" r="7.33" />
           <circle cx="429.5" cy="218.5" r="7.33" />
           <circle cx="325.5" cy="107.5" r="7.33" />
         </g>

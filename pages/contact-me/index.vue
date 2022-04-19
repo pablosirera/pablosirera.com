@@ -20,7 +20,7 @@ export default {
   data() {
     return {
       showAlert: false,
-      alertType: '',
+      alertType: 'success',
     }
   },
   methods: {
@@ -45,7 +45,7 @@ export default {
             'form-name': formName,
             ...data,
           }),
-          axiosConfig
+          axiosConfig,
         )
         this.launchAlert('success')
       } catch (error) {

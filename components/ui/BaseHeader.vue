@@ -26,6 +26,7 @@ import { NAV_LINKS } from '~/constants/navLinks'
 import ButtonLink from '~/components/ui/ButtonLink.vue'
 import Logo from '~/components/Logo.vue'
 import Menu from '~/components/ui/Menu.vue'
+import ColorModePicker from '~/components/ui/ColorModePicker.vue'
 
 export default {
   name: 'BaseHeader',
@@ -33,6 +34,7 @@ export default {
     Logo,
     Menu,
     ButtonLink,
+    ColorModePicker,
   },
   data() {
     return {

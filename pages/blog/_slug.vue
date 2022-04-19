@@ -27,10 +27,11 @@
 </template>
 
 <script>
+import Tag from '@/components/ui/Tag.vue'
 import FooterBlog from '~/components/blog/FooterBlog.vue'
 
 export default {
-  components: { FooterBlog },
+  components: { FooterBlog, Tag },
   async asyncData({ $content, params }) {
     const doc = await $content(`blog/${params.slug}`).fetch()
     return { doc }

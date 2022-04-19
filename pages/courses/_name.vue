@@ -41,14 +41,19 @@
 </template>
 
 <script>
+import YoutubeVideos from '@/components/home/YoutubeVideos.vue'
 import { CHANNEL_ID, COURSES } from '~/constants/courses'
+// TODO: change this component to another folder
 
 export default {
   name: 'CourseDetail',
+  components: {
+    YoutubeVideos,
+  },
   async asyncData({ params }) {
     const playlistId = COURSES[params.name].playlistId
     const videosResponse = await fetch(
-      `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&maxResults=30&key=${process.env.YOUTUBE_API_KEY}`
+      `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&maxResults=30&key=${process.env.YOUTUBE_API_KEY}`,
     )
     const jsonVideos = await videosResponse.json()
     const videos = jsonVideos.items

@@ -35,11 +35,13 @@
 <script>
 import { NAV_LINKS } from '@/constants/navLinks'
 import MenuIcon from '@/assets/icons/menu.svg?inline'
+import ColorModePicker from '~/components/ui/ColorModePicker.vue'
 
 export default {
   name: 'Menu',
   components: {
     MenuIcon,
+    ColorModePicker,
     CrossIcon: () => import('@/assets/icons/cross.svg?inline'),
   },
   data: () => ({

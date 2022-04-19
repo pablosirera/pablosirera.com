@@ -63,7 +63,18 @@
 </template>
 
 <script>
+import CoffeeWidget from '~/components/ui/CoffeeWidget.vue'
+import ListPosts from '~/components/home/ListPosts.vue'
+import YoutubeVideos from '~/components/home/YoutubeVideos.vue'
+import SocialIcons from '~/components/ui/SocialIcons.vue'
+
 export default {
+  components: {
+    CoffeeWidget,
+    ListPosts,
+    YoutubeVideos,
+    SocialIcons,
+  },
   scrollToTop: true,
   async asyncData({ $content }) {
     const posts = await $content('blog')
@@ -73,7 +84,7 @@ export default {
       .fetch()
 
     const videosResponse = await fetch(
-      `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=UUl41m8HBifhzM6Dh1V04wqA&maxResults=3&key=${process.env.YOUTUBE_API_KEY}`
+      `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=UUl41m8HBifhzM6Dh1V04wqA&maxResults=3&key=${process.env.YOUTUBE_API_KEY}`,
     )
     const jsonVideos = await videosResponse.json()
     const videos = jsonVideos.items

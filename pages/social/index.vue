@@ -48,7 +48,7 @@ export default {
       .fetch()
 
     const videosResponse = await fetch(
-      `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=UUl41m8HBifhzM6Dh1V04wqA&maxResults=1&key=${process.env.YOUTUBE_API_KEY}`
+      `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=UUl41m8HBifhzM6Dh1V04wqA&maxResults=1&key=${process.env.YOUTUBE_API_KEY}`,
     )
     const jsonVideos = await videosResponse.json()
     const videos = jsonVideos.items

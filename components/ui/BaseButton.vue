@@ -11,17 +11,17 @@ export default {
     theme: {
       type: String,
       default: 'normal',
-      validate: (value) => ['normal', 'outlined'].includes(value),
+      validator: value => ['normal', 'outlined'].includes(value),
     },
     size: {
       type: String,
       default: 'medium',
-      validate: (value) => ['medium'].includes(value),
+      validator: value => ['medium'].includes(value),
     },
     type: {
       type: String,
       default: 'button',
-      validate: (value) => ['button', 'submit', 'reset'].includes(value),
+      validator: value => ['button', 'submit', 'reset'].includes(value),
     },
   },
   computed: {

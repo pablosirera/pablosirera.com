@@ -46,7 +46,7 @@ export default {
     imgSize: {
       type: String,
       default: 'small',
-      validator: (value) => ['small', 'big'].includes(value),
+      validator: value => ['small', 'big'].includes(value),
     },
     isResponsive: {
       type: Boolean,
@@ -60,7 +60,7 @@ export default {
   computed: {
     allVideos() {
       return this.videos
-        .map((video) => {
+        .map(video => {
           if (Object.keys(video.snippet.thumbnails).length) {
             return {
               title: video.snippet.title,
