@@ -16,8 +16,8 @@
       De vez en cuando escribo artículos en mi
       <TheLink :is-local-route="true" url="/blog">blog</TheLink>, hago directos
       en
-      <TheLink url="https://twitch.tv/pablosirera">Twitch</TheLink> aprendiendo
-      en vivo o subo vídeos a
+      <TheLink url="https://twitch.tv/pablosirera">Twitch</TheLink>
+      aprendiendo en vivo o subo vídeos a
       <TheLink url="https://youtube.com/psirera4?sub_confirmation=1">
         Youtube </TheLink
       >.
@@ -33,9 +33,9 @@
       <TheLink url="https://github.com/pablosirera">GitHub</TheLink>
       podéis encontrar todo mi trabajo personal que realizo en open source.
       También podéis seguirme en mi cuenta de
-      <TheLink url="https://www.instagram.com/pablodeveloper"
-        >Instagram</TheLink
-      >
+      <TheLink url="https://www.instagram.com/pablodeveloper">
+        Instagram
+      </TheLink>
       en la que suelo subir fotos bien postureras 🤳 o en mi cuenta de
       <TheLink url="https://twitter.com/pablosirera">Twitter</TheLink>
     </p>
@@ -61,8 +61,13 @@
 </template>
 
 <script>
+import TechSkills from '@/components/about/TechSkills.vue'
+
 export default {
   name: 'About',
+  components: {
+    TechSkills,
+  },
   computed: {
     timelineItems() {
       return [

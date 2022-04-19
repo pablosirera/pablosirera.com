@@ -16,12 +16,12 @@ export default {
     type: {
       type: String,
       default: 'normal',
-      validate: (value) => ['normal', 'outlined'].includes(value),
+      validator: value => ['normal', 'outlined'].includes(value),
     },
     size: {
       type: String,
       default: 'medium',
-      validate: (value) => ['medium'].includes(value),
+      validator: value => ['medium'].includes(value),
     },
   },
   computed: {

@@ -37,7 +37,7 @@ export default {
     theme: {
       type: String,
       default: 'success',
-      validate: (value) => ['success', 'error'].includes(value),
+      validator: value => ['success', 'error'].includes(value),
     },
     show: {
       type: Boolean,

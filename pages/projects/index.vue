@@ -19,8 +19,13 @@
 
 <script>
 import { PROJECTS } from '@/constants/projects'
+import ProjectCard from '@/components/projects/ProjectCard.vue'
 
 export default {
+  name: 'ProjectsPage',
+  components: {
+    ProjectCard,
+  },
   computed: {
     projects() {
       return PROJECTS

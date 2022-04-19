@@ -24,12 +24,14 @@
 
 <script>
 import BlogCard from '@/components/blog/BlogCard'
+import Tag from '@/components/ui/Tag.vue'
 
 export default {
   scrollToTip: true,
   name: 'Blog',
   components: {
     BlogCard,
+    Tag,
   },
   async asyncData({ $content }) {
     const posts = await $content('blog')
@@ -45,7 +47,7 @@ export default {
   computed: {
     cleanTags() {
       if (this.tags.length) {
-        let tags = this.tags.map((tag) => tag.tags)
+        let tags = this.tags.map(tag => tag.tags)
         tags = [].concat(...tags)
         return [...new Set(tags)]
       }
