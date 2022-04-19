@@ -1,0 +1,23 @@
+name: Build application
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 6 * * *'
+  repository_dispatch:
+    types:
+      - webhook
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          date +%s > lastUpdate
+          git config user.name pablosirera
+          git config user.email psirera4@gmail.com
+          git add lastUpdate
+          git diff --quiet && git diff --staged --quiet || git commit -m "[bot] Update web with latest"
+          git push origin master
