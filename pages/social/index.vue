@@ -3,42 +3,51 @@
     <nuxt-link to="/" class="items-center flex flex-col">
       <Logo />
       <span>pablosirera.com</span>
+      <SocialIcons class="mt-2" />
     </nuxt-link>
-    <section class="mt-6 flex flex-col w-full text-center max-w-sm">
+    <section class="my-8">
+      <youtube-embed-lite
+        class="yt-video rounded"
+        :vid="videoId"
+      ></youtube-embed-lite>
+    </section>
+    <section class="flex flex-col w-full text-center max-w-sm">
       <a
         v-for="(item, index) in items"
         :key="index"
-        class="w-full bg-primary my-3 py-3 px-6 rounded cursor-pointer hover:bg-green-main-800"
+        class="w-full bg-primary my-3 py-3 px-6 rounded cursor-pointer border hover:border-green-main-800 dark:bg-green-main-800"
         @click="goTo(item)"
       >
         {{ item.name }}
       </a>
     </section>
-    <section class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-8">
-      <nuxt-link :to="post.path" tag="div" class="flex flex-col items-center">
+    <section class="mt-4">
+      <nuxt-link
+        :to="post.path"
+        tag="div"
+        class="flex flex-col items-center cursor-pointer"
+      >
         <img
           class="w-64 rounded-t"
           :src="`${imageUrl}${post.image}`"
           :alt="post.title"
         />
-        <p class="bg-primary relative px-3 py-2 w-64 rounded-b">
+        <p
+          class="bg-primary relative px-3 py-2 w-64 rounded-b dark:bg-green-800"
+        >
           {{ post.title }}
         </p>
-      </nuxt-link>
-      <nuxt-link to="" tag="div">
-        <youtube-embed-lite
-          class="yt-video"
-          :vid="videoId"
-        ></youtube-embed-lite>
       </nuxt-link>
     </section>
   </div>
 </template>
 
 <script>
+import SocialIcons from '~/components/ui/SocialIcons.vue'
 import { COMMON_POST_IMAGE_URL } from '~/constants/images'
 
 export default {
+  components: { SocialIcons },
   layout: 'social',
   async asyncData({ $content }) {
     const post = await $content('blog')
@@ -67,13 +76,24 @@ export default {
     items() {
       return [
         {
+          name: '🐤 Háblame por Twitter',
+          link: 'https://twitter.com/pablosirera',
+          isExternal: true,
+        },
+        {
+          name: '📸 Sígueme en Instagram',
+          link: 'https://instagram.com/pablodeveloper',
+          isExternal: true,
+        },
+        {
           name: 'Únete al servidor de discord ✌️',
           link: 'https://discord.gg/DsvmWs8Ban',
           isExternal: true,
         },
         {
-          name: '👨🏼‍💻 Pásate por mi nuevo sitio web',
-          link: '/',
+          name: '¿Me invitas a un café ☕️ ?',
+          link: 'https://www.buymeacoffee.com/pablosirera',
+          isExternal: true,
         },
         {
           name: 'Subscríbete a mi canal de Youtube 📹',
@@ -86,19 +106,8 @@ export default {
           isExternal: true,
         },
         {
-          name: '🐤 Háblame por Twitter',
-          link: 'https://twitter.com/pablosirera',
-          isExternal: true,
-        },
-        {
-          name: '📸 Sígueme en Instagram',
-          link: 'https://instagram.com/pablodeveloper',
-          isExternal: true,
-        },
-        {
-          name: '¿Me invitas a un café ☕️ ?',
-          link: 'https://www.buymeacoffee.com/pablosirera',
-          isExternal: true,
+          name: '👨🏼‍💻 Pásate por mi sitio web',
+          link: '/',
         },
       ]
     },
@@ -119,5 +128,8 @@ export default {
 .yt-video {
   // TODO: tailwind tiene la clase w-80 pero no funciona (quizás por la versión)
   width: 20rem;
+  & .thumb {
+    border-radius: 5.25rem;
+  }
 }
 </style>
