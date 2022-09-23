@@ -25,6 +25,7 @@ export default {
     SocialLinkedin: () => import('@/assets/icons/linkedin.svg?inline'),
     SocialGithub: () => import('@/assets/icons/github.svg?inline'),
     SocialDiscord: () => import('@/assets/icons/discord.svg?inline'),
+    SocialTiktok: () => import('@/assets/icons/tiktok.svg?inline'),
   },
   data: () => ({
     // TODO: translate this texts and add alt
@@ -63,6 +64,11 @@ export default {
         href: 'https://discord.gg/DsvmWs8Ban',
         name: 'discord',
         ariaLabel: 'Vente a hablar por discord',
+      },
+      {
+        href: 'https://www.tiktok.com/@pablosirera',
+        name: 'tiktok',
+        ariaLabel: 'Disfruta del contenido en Tiktok',
       },
     ],
   }),

@@ -127,7 +127,7 @@ export default {
 <style lang="scss" scoped>
 .yt-video {
   // TODO: tailwind tiene la clase w-80 pero no funciona (quizás por la versión)
-  width: 20rem;
+  width: 24rem;
   & .thumb {
     border-radius: 5.25rem;
   }
