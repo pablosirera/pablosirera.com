@@ -76,13 +76,8 @@ export default {
     items() {
       return [
         {
-          name: '🐤 Háblame por Twitter',
-          link: 'https://twitter.com/pablosirera',
-          isExternal: true,
-        },
-        {
-          name: '📸 Sígueme en Instagram',
-          link: 'https://instagram.com/pablodeveloper',
+          name: 'Subscríbete a mi canal de Youtube 📹',
+          link: 'https://www.youtube.com/user/psirera4?sub_confirmation=1',
           isExternal: true,
         },
         {
@@ -91,22 +86,22 @@ export default {
           isExternal: true,
         },
         {
+          name: 'Aprende gratis con mis cursos',
+          link: 'https://pablosirera.com/cursos',
+          isExternal: true,
+        },
+        {
+          name: '🎙 Sígueme en los directos de twitch',
+          link: 'https://twitch.tv/pablosirera',
+          isExternal: true,
+        },
+        {
           name: '¿Me invitas a un café ☕️ ?',
           link: 'https://www.buymeacoffee.com/pablosirera',
           isExternal: true,
         },
         {
-          name: 'Subscríbete a mi canal de Youtube 📹',
-          link: 'https://www.youtube.com/user/psirera4?sub_confirmation=1',
-          isExternal: true,
-        },
-        {
-          name: '🎙 Pásate por mis directos en twitch',
-          link: 'https://twitch.tv/pablosirera',
-          isExternal: true,
-        },
-        {
-          name: '👨🏼‍💻 Pásate por mi sitio web',
+          name: '👨🏼‍💻 Visita mi sitio web',
           link: '/',
         },
       ]

@@ -42,12 +42,10 @@ export default {
     async routes() {
       const { $content } = require('@nuxt/content')
       const dynamicRoutes = await $content('blog').only(['slug']).fetch()
-      const contentRoutes = dynamicRoutes.map((myRoute) =>
-        myRoute.slug === '/index' ? '/' : `/blog/${myRoute.slug}`
+      const contentRoutes = dynamicRoutes.map(myRoute =>
+        myRoute.slug === '/index' ? '/' : `/blog/${myRoute.slug}`,
       )
-      const coursesRoutes = Object.keys(COURSES).map(
-        (key) => COURSES[key].route
-      )
+      const coursesRoutes = Object.keys(COURSES).map(key => COURSES[key].route)
       return [contentRoutes, coursesRoutes].flat()
     },
   },
@@ -140,7 +138,7 @@ export default {
         }
         const articles = await $content('blog').sortBy('date', 'desc').fetch()
 
-        articles.forEach((article) => {
+        articles.forEach(article => {
           const url = `${baseUrlArticles}/${article.slug}`
 
           feed.addItem({
