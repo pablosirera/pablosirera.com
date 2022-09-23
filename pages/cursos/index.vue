@@ -40,7 +40,7 @@ export default {
         {
           hid: 'og:url',
           property: 'og:url',
-          content: 'https://pablosirera.com/courses',
+          content: 'https://pablosirera.com/cursos',
         },
         {
           hid: 'og:title',

@@ -8,7 +8,7 @@ export const NAV_LINKS = [
     name: 'Proyectos',
   },
   {
-    url: '/courses',
+    url: '/cursos',
     name: 'Cursos',
   },
   {
