@@ -62,11 +62,14 @@ export default {
       return this.videos
         .map(video => {
           if (Object.keys(video.snippet.thumbnails).length) {
+            const image =
+              video.snippet.thumbnails.maxres ||
+              video.snippet.thumbnails.default
             return {
               title: video.snippet.title,
               id: video.id,
               shortId: video.snippet.resourceId.videoId,
-              img: video.snippet.thumbnails.maxres.url,
+              img: image.url,
             }
           }
         })
