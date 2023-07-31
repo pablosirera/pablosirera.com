@@ -3,15 +3,24 @@
     <nuxt-link to="/" class="items-center flex flex-col">
       <Logo />
       <span>pablosirera.com</span>
-      <SocialIcons class="mt-2" />
     </nuxt-link>
-    <section class="my-8">
-      <youtube-embed-lite
-        class="yt-video rounded"
-        :vid="videoId"
-      ></youtube-embed-lite>
+    <SocialIcons class="mt-4" />
+    <section class="my-8 max-w-sm">
+      <div class="flex flex-col items-center w-full">
+        <h3
+          class="bg-primary text-black font-normal px-4 py-2 rounded-t-md dark:bg-green-main-800 dark:text-white"
+        >
+          {{ video.snippet.title }}
+        </h3>
+        <youtube-embed-lite
+          class="yt-video rounded"
+          :vid="videoId"
+        ></youtube-embed-lite>
+      </div>
     </section>
-    <section class="flex flex-col w-full text-center max-w-sm">
+    <section
+      class="flex flex-col w-full text-center max-w-sm text-black dark:text-white"
+    >
       <a
         v-for="(item, index) in items"
         :key="index"
@@ -25,7 +34,7 @@
       <nuxt-link
         :to="post.path"
         tag="div"
-        class="flex flex-col items-center cursor-pointer"
+        class="flex flex-col items-center cursor-pointer text-black dark:text-white"
       >
         <img
           class="w-64 rounded-t"
@@ -33,7 +42,7 @@
           :alt="post.title"
         />
         <p
-          class="bg-primary relative px-3 py-2 w-64 rounded-b dark:bg-green-800"
+          class="bg-primary relative px-3 py-2 w-64 rounded-b dark:bg-green-main-800"
         >
           {{ post.title }}
         </p>
