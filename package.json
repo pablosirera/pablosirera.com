@@ -40,7 +40,8 @@
     "nuxt-i18n": "^6.12.2",
     "nuxt-youtube-subscribe-module": "^0.1.1",
     "timeline-vuejs": "^1.1.6",
-    "v-click-outside": "^3.0.1"
+    "v-click-outside": "^3.0.1",
+    "vue-gtag": "^1.16.1"
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^1.1.1",
@@ -49,7 +50,7 @@
     "@nuxtjs/google-analytics": "^2.4.0",
     "@nuxtjs/stylelint-module": "^4.0.0",
     "@nuxtjs/svg": "^0.1.11",
-    "@nuxtjs/tailwindcss": "^3.3.4",
+    "@nuxtjs/tailwindcss": "^5.3.5",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.15.0",
     "eslint-config-prettier": "^6.11.0",

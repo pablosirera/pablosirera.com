@@ -58,7 +58,7 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: ['~/plugins/global.js', '~/plugins/directives.js'],
+  plugins: ['~/plugins/global.js', '~/plugins/directives.js', '~/plugins/gtag'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -162,6 +162,7 @@ export default {
     APP_TITLE: process.env.APP_TITLE,
     APP_DESC: process.env.APP_DESC,
     YOUTUBE_API_KEY: process.env.YOUTUBE_API_KEY,
+    GOOGLE_ANALYTICS_GTAG: process.env.GOOGLE_ANALYTICS_GTAG,
   },
   /*
    ** color mode config
