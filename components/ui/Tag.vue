@@ -1,7 +1,6 @@
 <template>
   <span :class="tagClasses" class="tag select-none" @click="emitEvent">
-    <img class="w-5 mr-1" :src="getTagUrl(tag)" loading="lazy" :alt="tag" />
-    {{ tag }}
+    {{ getTagEmoji() }} {{ tag }}
   </span>
 </template>
 
@@ -30,8 +29,16 @@ export default {
     emitEvent() {
       this.$emit('select', this.tag)
     },
-    getTagUrl(tag) {
-      return require(`@/assets/icons/${tag}.png`)
+    getTagEmoji() {
+      const options = {
+        desarrollo: '💻',
+        vue: '🟢',
+        firebase: '🔥',
+        personal: '🙋‍♂️',
+        tailwind: '🌊',
+      }
+
+      return options[this.tag.toLowerCase()]
     },
   },
 }

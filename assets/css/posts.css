@@ -28,9 +28,10 @@ article > .nuxt-content {
 }
 
 .nuxt-content blockquote {
-  border-left: 4px solid theme('colors.gray-main.400');
-  padding: 8px 12px;
+  border-left: 4px solid theme('colors.primary');
+  padding: 14px 12px;
   margin: 10px 0;
+  font-size: 1.25rem;
 }
 
 .muxt-content .nuxt-content-highlight {
@@ -50,6 +51,10 @@ article > .nuxt-content {
 .nuxt-content .yt-video {
   margin: 20px auto;
   max-width: 450px;
+}
+
+.nuxt-content iframe {
+  margin: 2rem 0;
 }
 
 .nuxt-content a {
