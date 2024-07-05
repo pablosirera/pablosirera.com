@@ -8,7 +8,7 @@
     <section class="my-8 max-w-sm">
       <div class="flex flex-col items-center w-full">
         <h3
-          class="bg-primary text-black font-normal px-4 py-2 rounded-t-md dark:bg-green-main-800 dark:text-white"
+          class="w-full bg-primary text-black font-normal px-4 py-2 rounded-t-md dark:bg-green-main-800 dark:text-white"
         >
           {{ video.snippet.title }}
         </h3>
@@ -33,16 +33,15 @@
     <section class="mt-4">
       <nuxt-link
         :to="post.path"
-        tag="div"
-        class="flex flex-col items-center cursor-pointer text-black dark:text-white"
+        class="max-w-sm flex flex-col items-center cursor-pointer text-black dark:text-white"
       >
         <img
-          class="w-64 rounded-t"
+          class="w-full rounded-t"
           :src="`${imageUrl}${post.image}`"
           :alt="post.title"
         />
         <p
-          class="bg-primary relative px-3 py-2 w-64 rounded-b dark:bg-green-main-800"
+          class="bg-primary relative px-3 py-2 w-full rounded-b dark:bg-green-main-800"
         >
           {{ post.title }}
         </p>
@@ -90,6 +89,11 @@ export default {
           isExternal: true,
         },
         {
+          name: 'Visita todos mis productos 🗄️',
+          link: 'https://www.amazon.es/shop/pablodeveloper',
+          isExternal: true,
+        },
+        {
           name: 'Únete al servidor de discord ✌️',
           link: 'https://discord.gg/DsvmWs8Ban',
           isExternal: true,
@@ -130,8 +134,8 @@ export default {
 
 <style lang="scss" scoped>
 .yt-video {
-  // TODO: tailwind tiene la clase w-80 pero no funciona (quizás por la versión)
-  width: 24rem;
+  @apply w-[22rem] sm:w-96;
+
   & .thumb {
     border-radius: 5.25rem;
   }
