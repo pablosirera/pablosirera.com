@@ -94,6 +94,11 @@ export default {
           isExternal: true,
         },
         {
+          name: 'Agenda una mentoría 1:1 👥',
+          link: 'https://calendly.com/pablosirera/mentoring',
+          isExternal: true,
+        },
+        {
           name: 'Únete al servidor de discord ✌️',
           link: 'https://discord.gg/DsvmWs8Ban',
           isExternal: true,

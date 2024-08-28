@@ -24,6 +24,13 @@
             >
               {{ link.name }}
             </a>
+            <a
+              class="link font-bold text-2xl text-blue-main-800 rounded p-4 cursor-pointer"
+              href="https://calendly.com/pablosirera/mentoring"
+              target="_blank"
+            >
+              Mentorías
+            </a>
             <ColorModePicker class="p-5" />
           </div>
         </div>

@@ -13,6 +13,15 @@
               {{ link.name }}
             </nuxt-link>
           </li>
+          <li>
+            <a
+              class="link"
+              href="https://calendly.com/pablosirera/mentoring"
+              target="_blank"
+            >
+              Mentorías
+            </a>
+          </li>
           <ButtonLink type="outlined" path="/contact-me">Contáctame</ButtonLink>
         </ul>
         <Menu class="block sm:hidden" />
